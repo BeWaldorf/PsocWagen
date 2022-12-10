@@ -1,3 +1,7 @@
+#include "esp_event.h"
+#include "esp_http_server.h"
+#include "esp_log.h"
+
 extern char data_wagen[4];
 extern char data_godot[3];
 

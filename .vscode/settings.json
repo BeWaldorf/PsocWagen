@@ -21,7 +21,9 @@
         "project.h": "c",
         "uart.h": "c",
         "esp_http_server.h": "c",
-        "task.h": "c"
+        "task.h": "c",
+        "stdio.h": "c",
+        "wifi.h": "c"
     },
     "idf.flashType": "UART"
 }

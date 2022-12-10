@@ -1,2 +1,2 @@
-idf_component_register(SRCS "wifi.c" "main.c"
+idf_component_register(SRCS "ESPuart.c" "ESPwifi.c" "main.c"
                     INCLUDE_DIRS ".")
