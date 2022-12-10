@@ -39,7 +39,7 @@ void tx_task_maker(void *arg){
     }
 }
 
-void rx_task_maker(void *arg){
+    void rx_task_maker(void *arg){
     static const char *RX_TASK_TAG = "RX_TASK";
     esp_log_level_set(RX_TASK_TAG, ESP_LOG_INFO);
     char *rcx_data = (char *)malloc(RCX_BUF_SIZE + 1);
@@ -53,19 +53,19 @@ void rx_task_maker(void *arg){
             ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, rcx_data);
             ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, rcx_data, rxBytes, ESP_LOG_INFO);
         }
-    }
-    do
-    {
-        if (rcx_data[(uint8_t)buf_adres] == COMM_START)
+        do
         {
-            uint8_t bericht_index = buf_adres;
-            for (uint_fast8_t i = 1; i <= 4; i++)
+            if (rcx_data[(uint8_t)buf_adres] == COMM_START)
             {
-                data_wagen[i - 1] = rcx_data[bericht_index + i];
+                uint8_t bericht_index = buf_adres;
+                for (uint_fast8_t i = 1; i <= 4; i++)
+                {
+                    data_wagen[i - 1] = rcx_data[bericht_index + i];
+                }
+                buf_adres = COMM_EINDE;
             }
-            buf_adres = COMM_EINDE;
-        }
-    } while (buf_adres != COMM_EINDE);
+        } while (buf_adres != COMM_EINDE);
+    }
 
     free(rcx_data);
 }

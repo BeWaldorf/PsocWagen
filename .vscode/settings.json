@@ -10,7 +10,7 @@
     "idf.portWin": "COM3",
     "idf.pythonBinPathWin": "c:\\Users\\df16\\.espressif\\python_env\\idf5.0_py3.8_env\\Scripts\\python.exe",
     "idf.toolsPathWin": "c:\\Users\\df16\\.espressif",
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Monokai",
     "files.associations": {
         "esp_system.h": "c",
         "gpio.h": "c",
