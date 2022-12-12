@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_7a7929f8-5e3b-4f86-a093-2d4ee6513111 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtProjectCustomData" version="1">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="47ec7058-2f43-4a2f-ae73-172624e235df">
+<CyGuid_47ec7058-2f43-4a2f-ae73-172624e235df type_name="CyDesigner.Common.ProjMgmt.Model.CyConfDepList" version="1">
+<name v="cmpl_deps">
+<CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
+<dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
+<CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM3\ARM_GCC_541\Debug\croutine.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\croutine.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\croutine.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\croutine.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<file name=".\FreeRTOSConfig.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\croutine.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\event_groups.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\event_groups.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\timers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\event_groups.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\event_groups.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\timers.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\event_groups.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\list.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\list.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\list.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\port.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\heap_1.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang\heap_1.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang\heap_1.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\queue.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\croutine.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\queue.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\queue.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\queue.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\queue.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\stream_buffer.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\stream_buffer.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\stream_buffer.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\stream_buffer.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\stream_buffer.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\tasks.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\stack_macros.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\timers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\tasks.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\stack_macros.h" />
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\tasks.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\timers.o">
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\ColdFire_V2\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\CodeWarrior\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91FR40008\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_AT91SAM7S\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM7_LPC23xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\H8S2329\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\HCS12\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MCF5235\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\MicroBlaze\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC405_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\PPC440_Xilinx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\78K0R\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\V850ES\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC18F\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC24_dsPIC\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MPLAB\PIC32MX\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Rowley\MSP430F449\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\SDCC\Cygnal\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\ATMega323\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM7S64\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\AtmelSAM9XE\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\LPC2000\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\MSP430\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR71x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR75x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\IAR\STR91x\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Paradigm\Tern_EE\small\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\RVDS\ARM7_LPC21xx\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\Softune\MB96340\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\flsh186\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\owatcom\16bitdos\pc\portmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\PC\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\BCC\16BitDOS\flsh186\prtmacro.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\FreeRTOS.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\deprecated_definitions.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\list.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\mpu_wrappers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\portable.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\projdefs.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\queue.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\task.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include\timers.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" />
+<dep name=".\FreeRTOSConfig.h" />
+<dep name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\timers.c" />
+</file>
+<file name="C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\timers.c" />
+</CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
+</dependency_info>
+</CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
+</name>
+<name v="lbry_deps">
+<CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
+<dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
+<CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1" />
+</dependency_info>
+</CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
+</name>
+</CyGuid_47ec7058-2f43-4a2f-ae73-172624e235df>
+</dataGuid>
+<dataGuid v="b0374e30-ce3a-47f2-ad85-821643292c68">
+<CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68 type_name="CyDesigner.Common.ProjMgmt.Common.CyCmdLineData" version="2">
+<genericCmdLineData>
+<name v="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3">
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3_MPU\port.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3_MPU -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\croutine.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\event_groups.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\list.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\queue.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\stream_buffer.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\tasks.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\timers.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang\heap_1.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3 -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="FreeRTOSConfig.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3_MPU -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3\port.c" v="-mcpu=cortex-m3 -mthumb -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\GCC\ARM_CM3 -IC:\FreeRTOS\FreeRTOS\FreeRTOS\Source -I. -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\UCLL_Koen_lib.a" v="-rs .\CortexM3\ARM_GCC_541\Debug\UCLL_Koen_lib.a C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\croutine.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\event_groups.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\list.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\queue.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\stream_buffer.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\tasks.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\timers.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\heap_1.o C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\port.o" />
+</name>
+</genericCmdLineData>
+<codeGenCmdLineTag v="" />
+</CyGuid_b0374e30-ce3a-47f2-ad85-821643292c68>
+</dataGuid>
+<dataGuid v="718b6b01-68ba-4a17-b632-d38dc61ebb3b">
+<CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b type_name="CyDesigner.Gde.Schematic.Symbolcatalog.CyComponentCatalogControl+CyCompCatalogData" version="1" tab="UCLL_KOEN">
+<tree_states_tab_names>
+<v>Cypress</v>
+<v>Off-Chip</v>
+<v>UCLL_KOEN</v>
+</tree_states_tab_names>
+<tree_states>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\Communications\I2C\I2C Master (Fixed Function) [v3.50]">
+<ExpandedNodeIds>
+<v>Cypress Component Catalog</v>
+<v>Cypress Component Catalog\Communications\I2C</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Cypress Component Catalog</v>
+<v>Cypress Component Catalog\Analog</v>
+<v>Cypress Component Catalog\CapSense</v>
+<v>Cypress Component Catalog\Communications</v>
+<v>Cypress Component Catalog\Digital</v>
+<v>Cypress Component Catalog\Display</v>
+<v>Cypress Component Catalog\Filters</v>
+<v>Cypress Component Catalog\Ports and Pins</v>
+<v>Cypress Component Catalog\Power Supervision</v>
+<v>Cypress Component Catalog\System</v>
+<v>Cypress Component Catalog\Thermal Management</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Off-Chip Component Catalog">
+<ExpandedNodeIds>
+<v>Off-Chip Component Catalog</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Off-Chip Component Catalog</v>
+<v>Off-Chip Component Catalog\Active</v>
+<v>Off-Chip Component Catalog\Diodes</v>
+<v>Off-Chip Component Catalog\Electro-Mechanical</v>
+<v>Off-Chip Component Catalog\Passive</v>
+<v>Off-Chip Component Catalog\Power</v>
+<v>Off-Chip Component Catalog\Sensors</v>
+<v>Off-Chip Component Catalog\Transistors</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="UCLL_KOEN Component Catalog\I2C\MPU6050 [v0.0]">
+<ExpandedNodeIds>
+<v>UCLL_KOEN Component Catalog</v>
+<v>UCLL_KOEN Component Catalog\I2C</v>
+<v>UCLL_KOEN Component Catalog\test</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>UCLL_KOEN Component Catalog</v>
+<v>UCLL_KOEN Component Catalog\communicatie</v>
+<v>UCLL_KOEN Component Catalog\Display</v>
+<v>UCLL_KOEN Component Catalog\I2C</v>
+<v>UCLL_KOEN Component Catalog\I2C\MCP23008 [v0.0]</v>
+<v>UCLL_KOEN Component Catalog\I2C\MCP23008_01 [v0.0]</v>
+<v>UCLL_KOEN Component Catalog\I2C\MPU6050 [v0.0]</v>
+<v>UCLL_KOEN Component Catalog\I2C\MPU6050_m [v0.0]</v>
+<v>UCLL_KOEN Component Catalog\sensor</v>
+<v>UCLL_KOEN Component Catalog\Software</v>
+<v>UCLL_KOEN Component Catalog\test</v>
+<v>UCLL_KOEN Component Catalog\test\test01 [v0.0]</v>
+<v>UCLL_KOEN Component Catalog\test\test2 [v0.0]</v>
+<v>UCLL_KOEN Component Catalog\test\test3 [v1.1]</v>
+<v>UCLL_KOEN Component Catalog\test\test4 [v1.2]</v>
+<v>UCLL_KOEN Component Catalog\test\test4_v1_2_01 [v1.2]</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</tree_states>
+</CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<properties />
+</CyGuid_7a7929f8-5e3b-4f86-a093-2d4ee6513111>
+</CyXmlSerializer>

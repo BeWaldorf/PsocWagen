@@ -1,0 +1,1 @@
+'C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\stream_buffer.c' 'C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\timers.c' -o .o -T SOURCE_C__ARM_GCC_GENERIC -I 'C:\FreeRTOS\FreeRTOS\FreeRTOS\Source\include' -I 'C:\FreeRTOS\FreeRTOS\FreeRTOS\Source' -f 'C:\DATA\software\embedded_controllers\Cypress\UCLL_Koen_lib\UCLL_Koen_lib.cylib\CortexM3\ARM_GCC_541\Debug\.deps\SOURCE_C__ARM_GCC_GENERIC.d'

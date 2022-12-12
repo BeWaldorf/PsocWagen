@@ -1,0 +1,1121 @@
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"heap_1.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.pvPortMalloc,"ax",%progbits
+  20              		.align	2
+  21              		.global	pvPortMalloc
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	pvPortMalloc, %function
+  25              	pvPortMalloc:
+  26              	.LFB4:
+  27              		.file 1 "..\\..\\..\\..\\..\\..\\FreeRTOS\\FreeRTOS\\FreeRTOS\\Source\\portable\\MemMang\\heap_1.c
+   1:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /*
+   2:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * FreeRTOS Kernel V10.4.0
+   3:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+   4:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  *
+   5:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * Permission is hereby granted, free of charge, to any person obtaining a copy of
+   6:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * this software and associated documentation files (the "Software"), to deal in
+   7:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * the Software without restriction, including without limitation the rights to
+   8:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+   9:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * the Software, and to permit persons to whom the Software is furnished to do so,
+  10:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * subject to the following conditions:
+  11:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  *
+  12:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * The above copyright notice and this permission notice shall be included in all
+  13:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * copies or substantial portions of the Software.
+  14:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  *
+  15:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  16:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+  17:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+  18:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+  19:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  20:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  21:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  *
+  22:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * https://www.FreeRTOS.org
+  23:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * https://github.com/FreeRTOS
+  24:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  *
+  25:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * 1 tab == 4 spaces!
+  26:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  */
+  27:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  28:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  29:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /*
+  30:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * The simplest possible implementation of pvPortMalloc().  Note that this
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 2
+
+
+  31:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * implementation does NOT allow allocated memory to be freed again.
+  32:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  *
+  33:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * See heap_2.c, heap_3.c and heap_4.c for alternative implementations, and the
+  34:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * memory management pages of https://www.FreeRTOS.org for more information.
+  35:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  */
+  36:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #include <stdlib.h>
+  37:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  38:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
+  39:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * all the API functions to use the MPU wrappers.  That should only be done when
+  40:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****  * task.h is included from an application file. */
+  41:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+  42:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  43:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #include "FreeRTOS.h"
+  44:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #include "task.h"
+  45:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  46:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+  47:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  48:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #if ( configSUPPORT_DYNAMIC_ALLOCATION == 0 )
+  49:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     #error This file must not be used if configSUPPORT_DYNAMIC_ALLOCATION is 0
+  50:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #endif
+  51:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  52:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /* A few bytes might be lost to byte aligning the heap start address. */
+  53:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #define configADJUSTED_HEAP_SIZE    ( configTOTAL_HEAP_SIZE - portBYTE_ALIGNMENT )
+  54:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  55:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /* Allocate the memory for the heap. */
+  56:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #if ( configAPPLICATION_ALLOCATED_HEAP == 1 )
+  57:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  58:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /* The application writer has already defined the array used for the RTOS
+  59:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** * heap - probably so it can be placed in a special segment or address. */
+  60:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     extern uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
+  61:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #else
+  62:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     static uint8_t ucHeap[ configTOTAL_HEAP_SIZE ];
+  63:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** #endif /* configAPPLICATION_ALLOCATED_HEAP */
+  64:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  65:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /* Index into the ucHeap array. */
+  66:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** static size_t xNextFreeByte = ( size_t ) 0;
+  67:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  68:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /*-----------------------------------------------------------*/
+  69:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  70:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** void * pvPortMalloc( size_t xWantedSize )
+  71:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** {
+  28              		.loc 1 71 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              	.LVL0:
+  33 0000 38B5     		push	{r3, r4, r5, lr}
+  34              		.cfi_def_cfa_offset 16
+  35              		.cfi_offset 3, -16
+  36              		.cfi_offset 4, -12
+  37              		.cfi_offset 5, -8
+  38              		.cfi_offset 14, -4
+  39 0002 0446     		mov	r4, r0
+  40              	.LVL1:
+  72:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     void * pvReturn = NULL;
+  73:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     static uint8_t * pucAlignedHeap = NULL;
+  74:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 3
+
+
+  75:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     /* Ensure that blocks are always aligned to the required number of bytes. */
+  76:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     #if ( portBYTE_ALIGNMENT != 1 )
+  77:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         {
+  78:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             if( xWantedSize & portBYTE_ALIGNMENT_MASK )
+  41              		.loc 1 78 0
+  42 0004 10F0070F 		tst	r0, #7
+  43 0008 02D0     		beq	.L2
+  79:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             {
+  80:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****                 /* Byte alignment required. */
+  81:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****                 xWantedSize += ( portBYTE_ALIGNMENT - ( xWantedSize & portBYTE_ALIGNMENT_MASK ) );
+  44              		.loc 1 81 0
+  45 000a 20F00704 		bic	r4, r0, #7
+  46 000e 0834     		adds	r4, r4, #8
+  47              	.LVL2:
+  48              	.L2:
+  82:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             }
+  83:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         }
+  84:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     #endif
+  85:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  86:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     vTaskSuspendAll();
+  49              		.loc 1 86 0
+  50 0010 FFF7FEFF 		bl	vTaskSuspendAll
+  51              	.LVL3:
+  87:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     {
+  88:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         if( pucAlignedHeap == NULL )
+  52              		.loc 1 88 0
+  53 0014 104B     		ldr	r3, .L8
+  54 0016 1B68     		ldr	r3, [r3]
+  55 0018 2BB9     		cbnz	r3, .L3
+  89:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         {
+  90:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             /* Ensure the heap starts on a correctly aligned boundary. */
+  91:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             pucAlignedHeap = ( uint8_t * ) ( ( ( portPOINTER_SIZE_TYPE ) & ucHeap[ portBYTE_ALIGNME
+  56              		.loc 1 91 0
+  57 001a 0F4A     		ldr	r2, .L8
+  58 001c 02F10C03 		add	r3, r2, #12
+  59 0020 23F00703 		bic	r3, r3, #7
+  60 0024 1360     		str	r3, [r2]
+  61              	.L3:
+  92:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         }
+  93:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+  94:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         /* Check there is enough room left for the allocation. */
+  95:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         if( ( ( xNextFreeByte + xWantedSize ) < configADJUSTED_HEAP_SIZE ) &&
+  62              		.loc 1 95 0
+  63 0026 0D4B     		ldr	r3, .L8+4
+  64 0028 D3F81436 		ldr	r3, [r3, #1556]
+  65 002c 1C44     		add	r4, r4, r3
+  66              	.LVL4:
+  67 002e 42F2F772 		movw	r2, #10231
+  68 0032 9442     		cmp	r4, r2
+  69 0034 08D8     		bhi	.L5
+  70              		.loc 1 95 0 is_stmt 0 discriminator 1
+  71 0036 A342     		cmp	r3, r4
+  72 0038 08D2     		bcs	.L6
+  96:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             ( ( xNextFreeByte + xWantedSize ) > xNextFreeByte ) ) /* Check for overflow. */
+  97:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         {
+  98:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             /* Return the next free byte then increment the index past this
+  99:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****              * block. */
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 4
+
+
+ 100:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             pvReturn = pucAlignedHeap + xNextFreeByte;
+  73              		.loc 1 100 0 is_stmt 1
+  74 003a 074A     		ldr	r2, .L8
+  75 003c 1568     		ldr	r5, [r2]
+  76 003e 1D44     		add	r5, r5, r3
+  77              	.LVL5:
+ 101:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             xNextFreeByte += xWantedSize;
+  78              		.loc 1 101 0
+  79 0040 064B     		ldr	r3, .L8+4
+  80 0042 C3F81446 		str	r4, [r3, #1556]
+  81 0046 02E0     		b	.L4
+  82              	.LVL6:
+  83              	.L5:
+  72:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     static uint8_t * pucAlignedHeap = NULL;
+  84              		.loc 1 72 0
+  85 0048 0025     		movs	r5, #0
+  86 004a 00E0     		b	.L4
+  87              	.L6:
+  88 004c 0025     		movs	r5, #0
+  89              	.LVL7:
+  90              	.L4:
+ 102:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         }
+ 103:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 104:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         traceMALLOC( pvReturn, xWantedSize );
+ 105:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     }
+ 106:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     ( void ) xTaskResumeAll();
+  91              		.loc 1 106 0
+  92 004e FFF7FEFF 		bl	xTaskResumeAll
+  93              	.LVL8:
+ 107:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 108:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     #if ( configUSE_MALLOC_FAILED_HOOK == 1 )
+ 109:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         {
+ 110:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             if( pvReturn == NULL )
+ 111:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             {
+ 112:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****                 extern void vApplicationMallocFailedHook( void );
+ 113:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****                 vApplicationMallocFailedHook();
+ 114:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****             }
+ 115:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****         }
+ 116:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     #endif
+ 117:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 118:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     return pvReturn;
+ 119:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** }
+  94              		.loc 1 119 0
+  95 0052 2846     		mov	r0, r5
+  96 0054 38BD     		pop	{r3, r4, r5, pc}
+  97              	.LVL9:
+  98              	.L9:
+  99 0056 00BF     		.align	2
+ 100              	.L8:
+ 101 0058 00000000 		.word	.LANCHOR0
+ 102 005c F0210000 		.word	.LANCHOR1
+ 103              		.cfi_endproc
+ 104              	.LFE4:
+ 105              		.size	pvPortMalloc, .-pvPortMalloc
+ 106              		.section	.text.vPortFree,"ax",%progbits
+ 107              		.align	2
+ 108              		.global	vPortFree
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 5
+
+
+ 109              		.thumb
+ 110              		.thumb_func
+ 111              		.type	vPortFree, %function
+ 112              	vPortFree:
+ 113              	.LFB5:
+ 120:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /*-----------------------------------------------------------*/
+ 121:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 122:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** void vPortFree( void * pv )
+ 123:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** {
+ 114              		.loc 1 123 0
+ 115              		.cfi_startproc
+ 116              		@ args = 0, pretend = 0, frame = 0
+ 117              		@ frame_needed = 0, uses_anonymous_args = 0
+ 118              		@ link register save eliminated.
+ 119              	.LVL10:
+ 120 0000 7047     		bx	lr
+ 121              		.cfi_endproc
+ 122              	.LFE5:
+ 123              		.size	vPortFree, .-vPortFree
+ 124 0002 00BF     		.section	.text.vPortInitialiseBlocks,"ax",%progbits
+ 125              		.align	2
+ 126              		.global	vPortInitialiseBlocks
+ 127              		.thumb
+ 128              		.thumb_func
+ 129              		.type	vPortInitialiseBlocks, %function
+ 130              	vPortInitialiseBlocks:
+ 131              	.LFB6:
+ 124:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     /* Memory cannot be freed using this scheme.  See heap_2.c, heap_3.c and
+ 125:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****      * heap_4.c for alternative implementations, and the memory management pages of
+ 126:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****      * https://www.FreeRTOS.org for more information. */
+ 127:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     ( void ) pv;
+ 128:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 129:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     /* Force an assert as it is invalid to call this function. */
+ 130:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     configASSERT( pv == NULL );
+ 131:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** }
+ 132:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /*-----------------------------------------------------------*/
+ 133:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 134:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** void vPortInitialiseBlocks( void )
+ 135:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** {
+ 132              		.loc 1 135 0
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 0
+ 135              		@ frame_needed = 0, uses_anonymous_args = 0
+ 136              		@ link register save eliminated.
+ 136:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     /* Only required when static memory is not cleared. */
+ 137:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     xNextFreeByte = ( size_t ) 0;
+ 137              		.loc 1 137 0
+ 138 0000 0022     		movs	r2, #0
+ 139 0002 024B     		ldr	r3, .L12
+ 140 0004 C3F81426 		str	r2, [r3, #1556]
+ 141 0008 7047     		bx	lr
+ 142              	.L13:
+ 143 000a 00BF     		.align	2
+ 144              	.L12:
+ 145 000c F0210000 		.word	.LANCHOR1
+ 146              		.cfi_endproc
+ 147              	.LFE6:
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 6
+
+
+ 148              		.size	vPortInitialiseBlocks, .-vPortInitialiseBlocks
+ 149              		.section	.text.xPortGetFreeHeapSize,"ax",%progbits
+ 150              		.align	2
+ 151              		.global	xPortGetFreeHeapSize
+ 152              		.thumb
+ 153              		.thumb_func
+ 154              		.type	xPortGetFreeHeapSize, %function
+ 155              	xPortGetFreeHeapSize:
+ 156              	.LFB7:
+ 138:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** }
+ 139:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** /*-----------------------------------------------------------*/
+ 140:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** 
+ 141:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** size_t xPortGetFreeHeapSize( void )
+ 142:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** {
+ 157              		.loc 1 142 0
+ 158              		.cfi_startproc
+ 159              		@ args = 0, pretend = 0, frame = 0
+ 160              		@ frame_needed = 0, uses_anonymous_args = 0
+ 161              		@ link register save eliminated.
+ 143:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c ****     return( configADJUSTED_HEAP_SIZE - xNextFreeByte );
+ 162              		.loc 1 143 0
+ 163 0000 034B     		ldr	r3, .L15
+ 164 0002 D3F81406 		ldr	r0, [r3, #1556]
+ 144:..\..\..\..\..\..\FreeRTOS\FreeRTOS\FreeRTOS\Source\portable\MemMang/heap_1.c **** }
+ 165              		.loc 1 144 0
+ 166 0006 C0F51F50 		rsb	r0, r0, #10176
+ 167 000a 3830     		adds	r0, r0, #56
+ 168 000c 7047     		bx	lr
+ 169              	.L16:
+ 170 000e 00BF     		.align	2
+ 171              	.L15:
+ 172 0010 F0210000 		.word	.LANCHOR1
+ 173              		.cfi_endproc
+ 174              	.LFE7:
+ 175              		.size	xPortGetFreeHeapSize, .-xPortGetFreeHeapSize
+ 176              		.bss
+ 177              		.align	2
+ 178              		.set	.LANCHOR0,. + 0
+ 179              		.set	.LANCHOR1,. + 8688
+ 180              		.type	pucAlignedHeap.5181, %object
+ 181              		.size	pucAlignedHeap.5181, 4
+ 182              	pucAlignedHeap.5181:
+ 183 0000 00000000 		.space	4
+ 184              		.type	ucHeap, %object
+ 185              		.size	ucHeap, 10240
+ 186              	ucHeap:
+ 187 0004 00000000 		.space	10240
+ 187      00000000 
+ 187      00000000 
+ 187      00000000 
+ 187      00000000 
+ 188              		.type	xNextFreeByte, %object
+ 189              		.size	xNextFreeByte, 4
+ 190              	xNextFreeByte:
+ 191 2804 00000000 		.space	4
+ 192              		.text
+ 193              	.Letext0:
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 7
+
+
+ 194              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 195              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 196              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 197              		.file 5 "C:\\FreeRTOS\\FreeRTOS\\FreeRTOS\\Source\\include/task.h"
+ 198              		.section	.debug_info,"",%progbits
+ 199              	.Ldebug_info0:
+ 200 0000 AA010000 		.4byte	0x1aa
+ 201 0004 0400     		.2byte	0x4
+ 202 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 203 000a 04       		.byte	0x4
+ 204 000b 01       		.uleb128 0x1
+ 205 000c F1000000 		.4byte	.LASF24
+ 206 0010 0C       		.byte	0xc
+ 207 0011 00000000 		.4byte	.LASF25
+ 208 0015 6F000000 		.4byte	.LASF26
+ 209 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 210 001d 00000000 		.4byte	0
+ 211 0021 00000000 		.4byte	.Ldebug_line0
+ 212 0025 02       		.uleb128 0x2
+ 213 0026 58000000 		.4byte	.LASF4
+ 214 002a 02       		.byte	0x2
+ 215 002b D8       		.byte	0xd8
+ 216 002c 30000000 		.4byte	0x30
+ 217 0030 03       		.uleb128 0x3
+ 218 0031 04       		.byte	0x4
+ 219 0032 07       		.byte	0x7
+ 220 0033 D5010000 		.4byte	.LASF0
+ 221 0037 04       		.uleb128 0x4
+ 222 0038 04       		.byte	0x4
+ 223 0039 05       		.byte	0x5
+ 224 003a 696E7400 		.ascii	"int\000"
+ 225 003e 03       		.uleb128 0x3
+ 226 003f 08       		.byte	0x8
+ 227 0040 05       		.byte	0x5
+ 228 0041 0A020000 		.4byte	.LASF1
+ 229 0045 03       		.uleb128 0x3
+ 230 0046 08       		.byte	0x8
+ 231 0047 04       		.byte	0x4
+ 232 0048 6B020000 		.4byte	.LASF2
+ 233 004c 03       		.uleb128 0x3
+ 234 004d 01       		.byte	0x1
+ 235 004e 06       		.byte	0x6
+ 236 004f 77020000 		.4byte	.LASF3
+ 237 0053 02       		.uleb128 0x2
+ 238 0054 4E000000 		.4byte	.LASF5
+ 239 0058 03       		.byte	0x3
+ 240 0059 1D       		.byte	0x1d
+ 241 005a 5E000000 		.4byte	0x5e
+ 242 005e 03       		.uleb128 0x3
+ 243 005f 01       		.byte	0x1
+ 244 0060 08       		.byte	0x8
+ 245 0061 E3000000 		.4byte	.LASF6
+ 246 0065 03       		.uleb128 0x3
+ 247 0066 02       		.byte	0x2
+ 248 0067 05       		.byte	0x5
+ 249 0068 45020000 		.4byte	.LASF7
+ 250 006c 03       		.uleb128 0x3
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 8
+
+
+ 251 006d 02       		.byte	0x2
+ 252 006e 07       		.byte	0x7
+ 253 006f 91010000 		.4byte	.LASF8
+ 254 0073 03       		.uleb128 0x3
+ 255 0074 04       		.byte	0x4
+ 256 0075 05       		.byte	0x5
+ 257 0076 62020000 		.4byte	.LASF9
+ 258 007a 02       		.uleb128 0x2
+ 259 007b A4010000 		.4byte	.LASF10
+ 260 007f 03       		.byte	0x3
+ 261 0080 41       		.byte	0x41
+ 262 0081 85000000 		.4byte	0x85
+ 263 0085 03       		.uleb128 0x3
+ 264 0086 04       		.byte	0x4
+ 265 0087 07       		.byte	0x7
+ 266 0088 7F010000 		.4byte	.LASF11
+ 267 008c 03       		.uleb128 0x3
+ 268 008d 08       		.byte	0x8
+ 269 008e 07       		.byte	0x7
+ 270 008f E2010000 		.4byte	.LASF12
+ 271 0093 03       		.uleb128 0x3
+ 272 0094 04       		.byte	0x4
+ 273 0095 07       		.byte	0x7
+ 274 0096 01020000 		.4byte	.LASF13
+ 275 009a 05       		.uleb128 0x5
+ 276 009b 04       		.byte	0x4
+ 277 009c 03       		.uleb128 0x3
+ 278 009d 01       		.byte	0x1
+ 279 009e 08       		.byte	0x8
+ 280 009f 24020000 		.4byte	.LASF14
+ 281 00a3 02       		.uleb128 0x2
+ 282 00a4 F9010000 		.4byte	.LASF15
+ 283 00a8 04       		.byte	0x4
+ 284 00a9 18       		.byte	0x18
+ 285 00aa 53000000 		.4byte	0x53
+ 286 00ae 02       		.uleb128 0x2
+ 287 00af 59020000 		.4byte	.LASF16
+ 288 00b3 04       		.byte	0x4
+ 289 00b4 30       		.byte	0x30
+ 290 00b5 7A000000 		.4byte	0x7a
+ 291 00b9 06       		.uleb128 0x6
+ 292 00ba 04       		.byte	0x4
+ 293 00bb A3000000 		.4byte	0xa3
+ 294 00bf 07       		.uleb128 0x7
+ 295 00c0 38020000 		.4byte	.LASF27
+ 296 00c4 01       		.byte	0x1
+ 297 00c5 46       		.byte	0x46
+ 298 00c6 9A000000 		.4byte	0x9a
+ 299 00ca 00000000 		.4byte	.LFB4
+ 300 00ce 60000000 		.4byte	.LFE4-.LFB4
+ 301 00d2 01       		.uleb128 0x1
+ 302 00d3 9C       		.byte	0x9c
+ 303 00d4 1A010000 		.4byte	0x11a
+ 304 00d8 08       		.uleb128 0x8
+ 305 00d9 18020000 		.4byte	.LASF19
+ 306 00dd 01       		.byte	0x1
+ 307 00de 46       		.byte	0x46
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 9
+
+
+ 308 00df 25000000 		.4byte	0x25
+ 309 00e3 00000000 		.4byte	.LLST0
+ 310 00e7 09       		.uleb128 0x9
+ 311 00e8 AF010000 		.4byte	.LASF17
+ 312 00ec 01       		.byte	0x1
+ 313 00ed 48       		.byte	0x48
+ 314 00ee 9A000000 		.4byte	0x9a
+ 315 00f2 1E000000 		.4byte	.LLST1
+ 316 00f6 0A       		.uleb128 0xa
+ 317 00f7 29020000 		.4byte	.LASF18
+ 318 00fb 01       		.byte	0x1
+ 319 00fc 49       		.byte	0x49
+ 320 00fd B9000000 		.4byte	0xb9
+ 321 0101 05       		.uleb128 0x5
+ 322 0102 03       		.byte	0x3
+ 323 0103 00000000 		.4byte	pucAlignedHeap.5181
+ 324 0107 0B       		.uleb128 0xb
+ 325 0108 14000000 		.4byte	.LVL3
+ 326 010c 95010000 		.4byte	0x195
+ 327 0110 0B       		.uleb128 0xb
+ 328 0111 52000000 		.4byte	.LVL8
+ 329 0115 A1010000 		.4byte	0x1a1
+ 330 0119 00       		.byte	0
+ 331 011a 0C       		.uleb128 0xc
+ 332 011b 4F020000 		.4byte	.LASF28
+ 333 011f 01       		.byte	0x1
+ 334 0120 7A       		.byte	0x7a
+ 335 0121 00000000 		.4byte	.LFB5
+ 336 0125 02000000 		.4byte	.LFE5-.LFB5
+ 337 0129 01       		.uleb128 0x1
+ 338 012a 9C       		.byte	0x9c
+ 339 012b 3C010000 		.4byte	0x13c
+ 340 012f 0D       		.uleb128 0xd
+ 341 0130 707600   		.ascii	"pv\000"
+ 342 0133 01       		.byte	0x1
+ 343 0134 7A       		.byte	0x7a
+ 344 0135 9A000000 		.4byte	0x9a
+ 345 0139 01       		.uleb128 0x1
+ 346 013a 50       		.byte	0x50
+ 347 013b 00       		.byte	0
+ 348 013c 0E       		.uleb128 0xe
+ 349 013d BF010000 		.4byte	.LASF29
+ 350 0141 01       		.byte	0x1
+ 351 0142 86       		.byte	0x86
+ 352 0143 00000000 		.4byte	.LFB6
+ 353 0147 10000000 		.4byte	.LFE6-.LFB6
+ 354 014b 01       		.uleb128 0x1
+ 355 014c 9C       		.byte	0x9c
+ 356 014d 0F       		.uleb128 0xf
+ 357 014e BF000000 		.4byte	.LASF30
+ 358 0152 01       		.byte	0x1
+ 359 0153 8D       		.byte	0x8d
+ 360 0154 25000000 		.4byte	0x25
+ 361 0158 00000000 		.4byte	.LFB7
+ 362 015c 14000000 		.4byte	.LFE7-.LFB7
+ 363 0160 01       		.uleb128 0x1
+ 364 0161 9C       		.byte	0x9c
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 10
+
+
+ 365 0162 10       		.uleb128 0x10
+ 366 0163 A3000000 		.4byte	0xa3
+ 367 0167 73010000 		.4byte	0x173
+ 368 016b 11       		.uleb128 0x11
+ 369 016c 93000000 		.4byte	0x93
+ 370 0170 FF27     		.2byte	0x27ff
+ 371 0172 00       		.byte	0
+ 372 0173 0A       		.uleb128 0xa
+ 373 0174 B8010000 		.4byte	.LASF20
+ 374 0178 01       		.byte	0x1
+ 375 0179 3E       		.byte	0x3e
+ 376 017a 62010000 		.4byte	0x162
+ 377 017e 05       		.uleb128 0x5
+ 378 017f 03       		.byte	0x3
+ 379 0180 04000000 		.4byte	ucHeap
+ 380 0184 0A       		.uleb128 0xa
+ 381 0185 83020000 		.4byte	.LASF21
+ 382 0189 01       		.byte	0x1
+ 383 018a 42       		.byte	0x42
+ 384 018b 25000000 		.4byte	0x25
+ 385 018f 05       		.uleb128 0x5
+ 386 0190 03       		.byte	0x3
+ 387 0191 04280000 		.4byte	xNextFreeByte
+ 388 0195 12       		.uleb128 0x12
+ 389 0196 5F000000 		.4byte	.LASF22
+ 390 019a 5F000000 		.4byte	.LASF22
+ 391 019e 05       		.byte	0x5
+ 392 019f 3B05     		.2byte	0x53b
+ 393 01a1 12       		.uleb128 0x12
+ 394 01a2 D4000000 		.4byte	.LASF23
+ 395 01a6 D4000000 		.4byte	.LASF23
+ 396 01aa 05       		.byte	0x5
+ 397 01ab 7305     		.2byte	0x573
+ 398 01ad 00       		.byte	0
+ 399              		.section	.debug_abbrev,"",%progbits
+ 400              	.Ldebug_abbrev0:
+ 401 0000 01       		.uleb128 0x1
+ 402 0001 11       		.uleb128 0x11
+ 403 0002 01       		.byte	0x1
+ 404 0003 25       		.uleb128 0x25
+ 405 0004 0E       		.uleb128 0xe
+ 406 0005 13       		.uleb128 0x13
+ 407 0006 0B       		.uleb128 0xb
+ 408 0007 03       		.uleb128 0x3
+ 409 0008 0E       		.uleb128 0xe
+ 410 0009 1B       		.uleb128 0x1b
+ 411 000a 0E       		.uleb128 0xe
+ 412 000b 55       		.uleb128 0x55
+ 413 000c 17       		.uleb128 0x17
+ 414 000d 11       		.uleb128 0x11
+ 415 000e 01       		.uleb128 0x1
+ 416 000f 10       		.uleb128 0x10
+ 417 0010 17       		.uleb128 0x17
+ 418 0011 00       		.byte	0
+ 419 0012 00       		.byte	0
+ 420 0013 02       		.uleb128 0x2
+ 421 0014 16       		.uleb128 0x16
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 11
+
+
+ 422 0015 00       		.byte	0
+ 423 0016 03       		.uleb128 0x3
+ 424 0017 0E       		.uleb128 0xe
+ 425 0018 3A       		.uleb128 0x3a
+ 426 0019 0B       		.uleb128 0xb
+ 427 001a 3B       		.uleb128 0x3b
+ 428 001b 0B       		.uleb128 0xb
+ 429 001c 49       		.uleb128 0x49
+ 430 001d 13       		.uleb128 0x13
+ 431 001e 00       		.byte	0
+ 432 001f 00       		.byte	0
+ 433 0020 03       		.uleb128 0x3
+ 434 0021 24       		.uleb128 0x24
+ 435 0022 00       		.byte	0
+ 436 0023 0B       		.uleb128 0xb
+ 437 0024 0B       		.uleb128 0xb
+ 438 0025 3E       		.uleb128 0x3e
+ 439 0026 0B       		.uleb128 0xb
+ 440 0027 03       		.uleb128 0x3
+ 441 0028 0E       		.uleb128 0xe
+ 442 0029 00       		.byte	0
+ 443 002a 00       		.byte	0
+ 444 002b 04       		.uleb128 0x4
+ 445 002c 24       		.uleb128 0x24
+ 446 002d 00       		.byte	0
+ 447 002e 0B       		.uleb128 0xb
+ 448 002f 0B       		.uleb128 0xb
+ 449 0030 3E       		.uleb128 0x3e
+ 450 0031 0B       		.uleb128 0xb
+ 451 0032 03       		.uleb128 0x3
+ 452 0033 08       		.uleb128 0x8
+ 453 0034 00       		.byte	0
+ 454 0035 00       		.byte	0
+ 455 0036 05       		.uleb128 0x5
+ 456 0037 0F       		.uleb128 0xf
+ 457 0038 00       		.byte	0
+ 458 0039 0B       		.uleb128 0xb
+ 459 003a 0B       		.uleb128 0xb
+ 460 003b 00       		.byte	0
+ 461 003c 00       		.byte	0
+ 462 003d 06       		.uleb128 0x6
+ 463 003e 0F       		.uleb128 0xf
+ 464 003f 00       		.byte	0
+ 465 0040 0B       		.uleb128 0xb
+ 466 0041 0B       		.uleb128 0xb
+ 467 0042 49       		.uleb128 0x49
+ 468 0043 13       		.uleb128 0x13
+ 469 0044 00       		.byte	0
+ 470 0045 00       		.byte	0
+ 471 0046 07       		.uleb128 0x7
+ 472 0047 2E       		.uleb128 0x2e
+ 473 0048 01       		.byte	0x1
+ 474 0049 3F       		.uleb128 0x3f
+ 475 004a 19       		.uleb128 0x19
+ 476 004b 03       		.uleb128 0x3
+ 477 004c 0E       		.uleb128 0xe
+ 478 004d 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 12
+
+
+ 479 004e 0B       		.uleb128 0xb
+ 480 004f 3B       		.uleb128 0x3b
+ 481 0050 0B       		.uleb128 0xb
+ 482 0051 27       		.uleb128 0x27
+ 483 0052 19       		.uleb128 0x19
+ 484 0053 49       		.uleb128 0x49
+ 485 0054 13       		.uleb128 0x13
+ 486 0055 11       		.uleb128 0x11
+ 487 0056 01       		.uleb128 0x1
+ 488 0057 12       		.uleb128 0x12
+ 489 0058 06       		.uleb128 0x6
+ 490 0059 40       		.uleb128 0x40
+ 491 005a 18       		.uleb128 0x18
+ 492 005b 9742     		.uleb128 0x2117
+ 493 005d 19       		.uleb128 0x19
+ 494 005e 01       		.uleb128 0x1
+ 495 005f 13       		.uleb128 0x13
+ 496 0060 00       		.byte	0
+ 497 0061 00       		.byte	0
+ 498 0062 08       		.uleb128 0x8
+ 499 0063 05       		.uleb128 0x5
+ 500 0064 00       		.byte	0
+ 501 0065 03       		.uleb128 0x3
+ 502 0066 0E       		.uleb128 0xe
+ 503 0067 3A       		.uleb128 0x3a
+ 504 0068 0B       		.uleb128 0xb
+ 505 0069 3B       		.uleb128 0x3b
+ 506 006a 0B       		.uleb128 0xb
+ 507 006b 49       		.uleb128 0x49
+ 508 006c 13       		.uleb128 0x13
+ 509 006d 02       		.uleb128 0x2
+ 510 006e 17       		.uleb128 0x17
+ 511 006f 00       		.byte	0
+ 512 0070 00       		.byte	0
+ 513 0071 09       		.uleb128 0x9
+ 514 0072 34       		.uleb128 0x34
+ 515 0073 00       		.byte	0
+ 516 0074 03       		.uleb128 0x3
+ 517 0075 0E       		.uleb128 0xe
+ 518 0076 3A       		.uleb128 0x3a
+ 519 0077 0B       		.uleb128 0xb
+ 520 0078 3B       		.uleb128 0x3b
+ 521 0079 0B       		.uleb128 0xb
+ 522 007a 49       		.uleb128 0x49
+ 523 007b 13       		.uleb128 0x13
+ 524 007c 02       		.uleb128 0x2
+ 525 007d 17       		.uleb128 0x17
+ 526 007e 00       		.byte	0
+ 527 007f 00       		.byte	0
+ 528 0080 0A       		.uleb128 0xa
+ 529 0081 34       		.uleb128 0x34
+ 530 0082 00       		.byte	0
+ 531 0083 03       		.uleb128 0x3
+ 532 0084 0E       		.uleb128 0xe
+ 533 0085 3A       		.uleb128 0x3a
+ 534 0086 0B       		.uleb128 0xb
+ 535 0087 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 13
+
+
+ 536 0088 0B       		.uleb128 0xb
+ 537 0089 49       		.uleb128 0x49
+ 538 008a 13       		.uleb128 0x13
+ 539 008b 02       		.uleb128 0x2
+ 540 008c 18       		.uleb128 0x18
+ 541 008d 00       		.byte	0
+ 542 008e 00       		.byte	0
+ 543 008f 0B       		.uleb128 0xb
+ 544 0090 898201   		.uleb128 0x4109
+ 545 0093 00       		.byte	0
+ 546 0094 11       		.uleb128 0x11
+ 547 0095 01       		.uleb128 0x1
+ 548 0096 31       		.uleb128 0x31
+ 549 0097 13       		.uleb128 0x13
+ 550 0098 00       		.byte	0
+ 551 0099 00       		.byte	0
+ 552 009a 0C       		.uleb128 0xc
+ 553 009b 2E       		.uleb128 0x2e
+ 554 009c 01       		.byte	0x1
+ 555 009d 3F       		.uleb128 0x3f
+ 556 009e 19       		.uleb128 0x19
+ 557 009f 03       		.uleb128 0x3
+ 558 00a0 0E       		.uleb128 0xe
+ 559 00a1 3A       		.uleb128 0x3a
+ 560 00a2 0B       		.uleb128 0xb
+ 561 00a3 3B       		.uleb128 0x3b
+ 562 00a4 0B       		.uleb128 0xb
+ 563 00a5 27       		.uleb128 0x27
+ 564 00a6 19       		.uleb128 0x19
+ 565 00a7 11       		.uleb128 0x11
+ 566 00a8 01       		.uleb128 0x1
+ 567 00a9 12       		.uleb128 0x12
+ 568 00aa 06       		.uleb128 0x6
+ 569 00ab 40       		.uleb128 0x40
+ 570 00ac 18       		.uleb128 0x18
+ 571 00ad 9742     		.uleb128 0x2117
+ 572 00af 19       		.uleb128 0x19
+ 573 00b0 01       		.uleb128 0x1
+ 574 00b1 13       		.uleb128 0x13
+ 575 00b2 00       		.byte	0
+ 576 00b3 00       		.byte	0
+ 577 00b4 0D       		.uleb128 0xd
+ 578 00b5 05       		.uleb128 0x5
+ 579 00b6 00       		.byte	0
+ 580 00b7 03       		.uleb128 0x3
+ 581 00b8 08       		.uleb128 0x8
+ 582 00b9 3A       		.uleb128 0x3a
+ 583 00ba 0B       		.uleb128 0xb
+ 584 00bb 3B       		.uleb128 0x3b
+ 585 00bc 0B       		.uleb128 0xb
+ 586 00bd 49       		.uleb128 0x49
+ 587 00be 13       		.uleb128 0x13
+ 588 00bf 02       		.uleb128 0x2
+ 589 00c0 18       		.uleb128 0x18
+ 590 00c1 00       		.byte	0
+ 591 00c2 00       		.byte	0
+ 592 00c3 0E       		.uleb128 0xe
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 14
+
+
+ 593 00c4 2E       		.uleb128 0x2e
+ 594 00c5 00       		.byte	0
+ 595 00c6 3F       		.uleb128 0x3f
+ 596 00c7 19       		.uleb128 0x19
+ 597 00c8 03       		.uleb128 0x3
+ 598 00c9 0E       		.uleb128 0xe
+ 599 00ca 3A       		.uleb128 0x3a
+ 600 00cb 0B       		.uleb128 0xb
+ 601 00cc 3B       		.uleb128 0x3b
+ 602 00cd 0B       		.uleb128 0xb
+ 603 00ce 27       		.uleb128 0x27
+ 604 00cf 19       		.uleb128 0x19
+ 605 00d0 11       		.uleb128 0x11
+ 606 00d1 01       		.uleb128 0x1
+ 607 00d2 12       		.uleb128 0x12
+ 608 00d3 06       		.uleb128 0x6
+ 609 00d4 40       		.uleb128 0x40
+ 610 00d5 18       		.uleb128 0x18
+ 611 00d6 9742     		.uleb128 0x2117
+ 612 00d8 19       		.uleb128 0x19
+ 613 00d9 00       		.byte	0
+ 614 00da 00       		.byte	0
+ 615 00db 0F       		.uleb128 0xf
+ 616 00dc 2E       		.uleb128 0x2e
+ 617 00dd 00       		.byte	0
+ 618 00de 3F       		.uleb128 0x3f
+ 619 00df 19       		.uleb128 0x19
+ 620 00e0 03       		.uleb128 0x3
+ 621 00e1 0E       		.uleb128 0xe
+ 622 00e2 3A       		.uleb128 0x3a
+ 623 00e3 0B       		.uleb128 0xb
+ 624 00e4 3B       		.uleb128 0x3b
+ 625 00e5 0B       		.uleb128 0xb
+ 626 00e6 27       		.uleb128 0x27
+ 627 00e7 19       		.uleb128 0x19
+ 628 00e8 49       		.uleb128 0x49
+ 629 00e9 13       		.uleb128 0x13
+ 630 00ea 11       		.uleb128 0x11
+ 631 00eb 01       		.uleb128 0x1
+ 632 00ec 12       		.uleb128 0x12
+ 633 00ed 06       		.uleb128 0x6
+ 634 00ee 40       		.uleb128 0x40
+ 635 00ef 18       		.uleb128 0x18
+ 636 00f0 9742     		.uleb128 0x2117
+ 637 00f2 19       		.uleb128 0x19
+ 638 00f3 00       		.byte	0
+ 639 00f4 00       		.byte	0
+ 640 00f5 10       		.uleb128 0x10
+ 641 00f6 01       		.uleb128 0x1
+ 642 00f7 01       		.byte	0x1
+ 643 00f8 49       		.uleb128 0x49
+ 644 00f9 13       		.uleb128 0x13
+ 645 00fa 01       		.uleb128 0x1
+ 646 00fb 13       		.uleb128 0x13
+ 647 00fc 00       		.byte	0
+ 648 00fd 00       		.byte	0
+ 649 00fe 11       		.uleb128 0x11
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 15
+
+
+ 650 00ff 21       		.uleb128 0x21
+ 651 0100 00       		.byte	0
+ 652 0101 49       		.uleb128 0x49
+ 653 0102 13       		.uleb128 0x13
+ 654 0103 2F       		.uleb128 0x2f
+ 655 0104 05       		.uleb128 0x5
+ 656 0105 00       		.byte	0
+ 657 0106 00       		.byte	0
+ 658 0107 12       		.uleb128 0x12
+ 659 0108 2E       		.uleb128 0x2e
+ 660 0109 00       		.byte	0
+ 661 010a 3F       		.uleb128 0x3f
+ 662 010b 19       		.uleb128 0x19
+ 663 010c 3C       		.uleb128 0x3c
+ 664 010d 19       		.uleb128 0x19
+ 665 010e 6E       		.uleb128 0x6e
+ 666 010f 0E       		.uleb128 0xe
+ 667 0110 03       		.uleb128 0x3
+ 668 0111 0E       		.uleb128 0xe
+ 669 0112 3A       		.uleb128 0x3a
+ 670 0113 0B       		.uleb128 0xb
+ 671 0114 3B       		.uleb128 0x3b
+ 672 0115 05       		.uleb128 0x5
+ 673 0116 00       		.byte	0
+ 674 0117 00       		.byte	0
+ 675 0118 00       		.byte	0
+ 676              		.section	.debug_loc,"",%progbits
+ 677              	.Ldebug_loc0:
+ 678              	.LLST0:
+ 679 0000 00000000 		.4byte	.LVL0
+ 680 0004 10000000 		.4byte	.LVL2
+ 681 0008 0100     		.2byte	0x1
+ 682 000a 50       		.byte	0x50
+ 683 000b 10000000 		.4byte	.LVL2
+ 684 000f 2E000000 		.4byte	.LVL4
+ 685 0013 0100     		.2byte	0x1
+ 686 0015 54       		.byte	0x54
+ 687 0016 00000000 		.4byte	0
+ 688 001a 00000000 		.4byte	0
+ 689              	.LLST1:
+ 690 001e 04000000 		.4byte	.LVL1
+ 691 0022 40000000 		.4byte	.LVL5
+ 692 0026 0200     		.2byte	0x2
+ 693 0028 30       		.byte	0x30
+ 694 0029 9F       		.byte	0x9f
+ 695 002a 40000000 		.4byte	.LVL5
+ 696 002e 48000000 		.4byte	.LVL6
+ 697 0032 0100     		.2byte	0x1
+ 698 0034 55       		.byte	0x55
+ 699 0035 48000000 		.4byte	.LVL6
+ 700 0039 4E000000 		.4byte	.LVL7
+ 701 003d 0200     		.2byte	0x2
+ 702 003f 30       		.byte	0x30
+ 703 0040 9F       		.byte	0x9f
+ 704 0041 4E000000 		.4byte	.LVL7
+ 705 0045 56000000 		.4byte	.LVL9
+ 706 0049 0100     		.2byte	0x1
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 16
+
+
+ 707 004b 55       		.byte	0x55
+ 708 004c 56000000 		.4byte	.LVL9
+ 709 0050 60000000 		.4byte	.LFE4
+ 710 0054 0100     		.2byte	0x1
+ 711 0056 50       		.byte	0x50
+ 712 0057 00000000 		.4byte	0
+ 713 005b 00000000 		.4byte	0
+ 714              		.section	.debug_aranges,"",%progbits
+ 715 0000 34000000 		.4byte	0x34
+ 716 0004 0200     		.2byte	0x2
+ 717 0006 00000000 		.4byte	.Ldebug_info0
+ 718 000a 04       		.byte	0x4
+ 719 000b 00       		.byte	0
+ 720 000c 0000     		.2byte	0
+ 721 000e 0000     		.2byte	0
+ 722 0010 00000000 		.4byte	.LFB4
+ 723 0014 60000000 		.4byte	.LFE4-.LFB4
+ 724 0018 00000000 		.4byte	.LFB5
+ 725 001c 02000000 		.4byte	.LFE5-.LFB5
+ 726 0020 00000000 		.4byte	.LFB6
+ 727 0024 10000000 		.4byte	.LFE6-.LFB6
+ 728 0028 00000000 		.4byte	.LFB7
+ 729 002c 14000000 		.4byte	.LFE7-.LFB7
+ 730 0030 00000000 		.4byte	0
+ 731 0034 00000000 		.4byte	0
+ 732              		.section	.debug_ranges,"",%progbits
+ 733              	.Ldebug_ranges0:
+ 734 0000 00000000 		.4byte	.LFB4
+ 735 0004 60000000 		.4byte	.LFE4
+ 736 0008 00000000 		.4byte	.LFB5
+ 737 000c 02000000 		.4byte	.LFE5
+ 738 0010 00000000 		.4byte	.LFB6
+ 739 0014 10000000 		.4byte	.LFE6
+ 740 0018 00000000 		.4byte	.LFB7
+ 741 001c 14000000 		.4byte	.LFE7
+ 742 0020 00000000 		.4byte	0
+ 743 0024 00000000 		.4byte	0
+ 744              		.section	.debug_line,"",%progbits
+ 745              	.Ldebug_line0:
+ 746 0000 7B020000 		.section	.debug_str,"MS",%progbits,1
+ 746      02001A02 
+ 746      00000201 
+ 746      FB0E0D00 
+ 746      01010101 
+ 747              	.LASF25:
+ 748 0000 2E2E5C2E 		.ascii	"..\\..\\..\\..\\..\\..\\FreeRTOS\\FreeRTOS\\FreeRTO"
+ 748      2E5C2E2E 
+ 748      5C2E2E5C 
+ 748      2E2E5C2E 
+ 748      2E5C4672 
+ 749 002b 535C536F 		.ascii	"S\\Source\\portable\\MemMang\\heap_1.c\000"
+ 749      75726365 
+ 749      5C706F72 
+ 749      7461626C 
+ 749      655C4D65 
+ 750              	.LASF5:
+ 751 004e 5F5F7569 		.ascii	"__uint8_t\000"
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 17
+
+
+ 751      6E74385F 
+ 751      7400
+ 752              	.LASF4:
+ 753 0058 73697A65 		.ascii	"size_t\000"
+ 753      5F7400
+ 754              	.LASF22:
+ 755 005f 76546173 		.ascii	"vTaskSuspendAll\000"
+ 755      6B537573 
+ 755      70656E64 
+ 755      416C6C00 
+ 756              	.LASF26:
+ 757 006f 433A5C44 		.ascii	"C:\\DATA\\software\\embedded_controllers\\Cypress\\"
+ 757      4154415C 
+ 757      736F6674 
+ 757      77617265 
+ 757      5C656D62 
+ 758 009d 55434C4C 		.ascii	"UCLL_Koen_lib\\UCLL_Koen_lib.cylib\000"
+ 758      5F4B6F65 
+ 758      6E5F6C69 
+ 758      625C5543 
+ 758      4C4C5F4B 
+ 759              	.LASF30:
+ 760 00bf 78506F72 		.ascii	"xPortGetFreeHeapSize\000"
+ 760      74476574 
+ 760      46726565 
+ 760      48656170 
+ 760      53697A65 
+ 761              	.LASF23:
+ 762 00d4 78546173 		.ascii	"xTaskResumeAll\000"
+ 762      6B526573 
+ 762      756D6541 
+ 762      6C6C00
+ 763              	.LASF6:
+ 764 00e3 756E7369 		.ascii	"unsigned char\000"
+ 764      676E6564 
+ 764      20636861 
+ 764      7200
+ 765              	.LASF24:
+ 766 00f1 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 766      43313120 
+ 766      352E342E 
+ 766      31203230 
+ 766      31363036 
+ 767 0124 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 767      20726576 
+ 767      6973696F 
+ 767      6E203233 
+ 767      37373135 
+ 768 0157 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 768      66756E63 
+ 768      74696F6E 
+ 768      2D736563 
+ 768      74696F6E 
+ 769              	.LASF11:
+ 770 017f 6C6F6E67 		.ascii	"long unsigned int\000"
+ 770      20756E73 
+ 770      69676E65 
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 18
+
+
+ 770      6420696E 
+ 770      7400
+ 771              	.LASF8:
+ 772 0191 73686F72 		.ascii	"short unsigned int\000"
+ 772      7420756E 
+ 772      7369676E 
+ 772      65642069 
+ 772      6E7400
+ 773              	.LASF10:
+ 774 01a4 5F5F7569 		.ascii	"__uint32_t\000"
+ 774      6E743332 
+ 774      5F7400
+ 775              	.LASF17:
+ 776 01af 70765265 		.ascii	"pvReturn\000"
+ 776      7475726E 
+ 776      00
+ 777              	.LASF20:
+ 778 01b8 75634865 		.ascii	"ucHeap\000"
+ 778      617000
+ 779              	.LASF29:
+ 780 01bf 76506F72 		.ascii	"vPortInitialiseBlocks\000"
+ 780      74496E69 
+ 780      7469616C 
+ 780      69736542 
+ 780      6C6F636B 
+ 781              	.LASF0:
+ 782 01d5 756E7369 		.ascii	"unsigned int\000"
+ 782      676E6564 
+ 782      20696E74 
+ 782      00
+ 783              	.LASF12:
+ 784 01e2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 784      206C6F6E 
+ 784      6720756E 
+ 784      7369676E 
+ 784      65642069 
+ 785              	.LASF15:
+ 786 01f9 75696E74 		.ascii	"uint8_t\000"
+ 786      385F7400 
+ 787              	.LASF13:
+ 788 0201 73697A65 		.ascii	"sizetype\000"
+ 788      74797065 
+ 788      00
+ 789              	.LASF1:
+ 790 020a 6C6F6E67 		.ascii	"long long int\000"
+ 790      206C6F6E 
+ 790      6720696E 
+ 790      7400
+ 791              	.LASF19:
+ 792 0218 7857616E 		.ascii	"xWantedSize\000"
+ 792      74656453 
+ 792      697A6500 
+ 793              	.LASF14:
+ 794 0224 63686172 		.ascii	"char\000"
+ 794      00
+ 795              	.LASF18:
+ 796 0229 70756341 		.ascii	"pucAlignedHeap\000"
+ARM GAS  C:\Users\u0036181\AppData\Local\Temp\cctS5qZj.s 			page 19
+
+
+ 796      6C69676E 
+ 796      65644865 
+ 796      617000
+ 797              	.LASF27:
+ 798 0238 7076506F 		.ascii	"pvPortMalloc\000"
+ 798      72744D61 
+ 798      6C6C6F63 
+ 798      00
+ 799              	.LASF7:
+ 800 0245 73686F72 		.ascii	"short int\000"
+ 800      7420696E 
+ 800      7400
+ 801              	.LASF28:
+ 802 024f 76506F72 		.ascii	"vPortFree\000"
+ 802      74467265 
+ 802      6500
+ 803              	.LASF16:
+ 804 0259 75696E74 		.ascii	"uint32_t\000"
+ 804      33325F74 
+ 804      00
+ 805              	.LASF9:
+ 806 0262 6C6F6E67 		.ascii	"long int\000"
+ 806      20696E74 
+ 806      00
+ 807              	.LASF2:
+ 808 026b 6C6F6E67 		.ascii	"long double\000"
+ 808      20646F75 
+ 808      626C6500 
+ 809              	.LASF3:
+ 810 0277 7369676E 		.ascii	"signed char\000"
+ 810      65642063 
+ 810      68617200 
+ 811              	.LASF21:
+ 812 0283 784E6578 		.ascii	"xNextFreeByte\000"
+ 812      74467265 
+ 812      65427974 
+ 812      6500
+ 813              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

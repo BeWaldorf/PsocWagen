@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoCWagen\PsocWagen\Header Files\UART.h">
+<ExpandedNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\TopDesign</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Pins</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Analog</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Clocks</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Interrupts</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\DMA</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\System</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Directives</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Flash Security</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\EEPROM</v>
+<v>PSoCWagen\PsocWagen\Header Files</v>
+<v>PSoCWagen\PsocWagen\Header Files\cyapicallbacks.h</v>
+<v>PSoCWagen\PsocWagen\Header Files\MijnTaken.h</v>
+<v>PSoCWagen\PsocWagen\Header Files\UART.h</v>
+<v>PSoCWagen\PsocWagen\Header Files\Wagen.h</v>
+<v>PSoCWagen\PsocWagen\Source Files</v>
+<v>PSoCWagen\PsocWagen\Source Files\main.c</v>
+<v>PSoCWagen\PsocWagen\Source Files\MijnTaken.c</v>
+<v>PSoCWagen\PsocWagen\Source Files\UART.c</v>
+<v>PSoCWagen\PsocWagen\Source Files\Wagen.c</v>
+<v>PSoCWagen\PsocWagen\Generated_Source</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\TopDesign</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Pins</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Analog</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Clocks</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Interrupts</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\DMA</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\System</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Directives</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\Flash Security</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.cydwr\EEPROM</v>
+<v>PSoCWagen\PsocWagen\Header Files</v>
+<v>PSoCWagen\PsocWagen\Header Files\cyapicallbacks.h</v>
+<v>PSoCWagen\PsocWagen\Header Files\MijnTaken.h</v>
+<v>PSoCWagen\PsocWagen\Header Files\UART.h</v>
+<v>PSoCWagen\PsocWagen\Header Files\Wagen.h</v>
+<v>PSoCWagen\PsocWagen\Source Files</v>
+<v>PSoCWagen\PsocWagen\Source Files\main.c</v>
+<v>PSoCWagen\PsocWagen\Source Files\MijnTaken.c</v>
+<v>PSoCWagen\PsocWagen\Source Files\UART.c</v>
+<v>PSoCWagen\PsocWagen\Source Files\Wagen.c</v>
+<v>PSoCWagen\PsocWagen\Generated_Source</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\cy_boot</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\GeenIsr0</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\GeenIsr1</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\GeenIsr2</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\getSensoren</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\isr_rcx</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\Klok</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\LichtLinks</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\LichtRechts</v>
+<v>PSoCWagen\PsocWagen\Generated_Source\PSoC5\MotorLinks</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\TopDesign</v>
+<v>PSoCWagen\PsocWagen\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\TopDesign</v>
+<v>PSoCWagen\PsocWagen\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\CortexM3</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.elf</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.hex</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.map</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.gpdsc</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.rpt</v>
+<v>PSoCWagen\PsocWagen\PsocWagen_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\CortexM3</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.elf</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.hex</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.map</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.gpdsc</v>
+<v>PSoCWagen\PsocWagen\PsocWagen.rpt</v>
+<v>PSoCWagen\PsocWagen\PsocWagen_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\PSoC 5LP Architecture TRM</v>
+<v>PSoCWagen\PsocWagen\CY8C52LP Family Datasheet</v>
+<v>PSoCWagen\PsocWagen\System Reference Guides</v>
+<v>PSoCWagen\PsocWagen\System Reference Guides\cy_boot_v6_10</v>
+<v>PSoCWagen\PsocWagen\cy_clock_v2_20.pdf</v>
+<v>PSoCWagen\PsocWagen\cy_isr_v1_71.pdf</v>
+<v>PSoCWagen\PsocWagen\cy_pins_v2_20</v>
+<v>PSoCWagen\PsocWagen\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>PSoCWagen\PsocWagen\LUT_v1_60.pdf</v>
+<v>PSoCWagen\PsocWagen\PWM_v3_30</v>
+<v>PSoCWagen\PsocWagen\PWM_v3_30\PWM_v3_30.pdf</v>
+<v>PSoCWagen\PsocWagen\UART_v2_50</v>
+<v>PSoCWagen\PsocWagen\UART_v2_50\UART_v2_50.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>PSoCWagen</v>
+<v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\PSoC 5LP Architecture TRM</v>
+<v>PSoCWagen\PsocWagen\CY8C52LP Family Datasheet</v>
+<v>PSoCWagen\PsocWagen\System Reference Guides</v>
+<v>PSoCWagen\PsocWagen\System Reference Guides\cy_boot_v6_10</v>
+<v>PSoCWagen\PsocWagen\cy_clock_v2_20.pdf</v>
+<v>PSoCWagen\PsocWagen\cy_isr_v1_71.pdf</v>
+<v>PSoCWagen\PsocWagen\cy_pins_v2_20</v>
+<v>PSoCWagen\PsocWagen\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>PSoCWagen\PsocWagen\LUT_v1_60.pdf</v>
+<v>PSoCWagen\PsocWagen\PWM_v3_30</v>
+<v>PSoCWagen\PsocWagen\PWM_v3_30\PWM_v3_30.pdf</v>
+<v>PSoCWagen\PsocWagen\UART_v2_50</v>
+<v>PSoCWagen\PsocWagen\UART_v2_50\UART_v2_50.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="6c335137-fa19-46ce-bc2d-2fbeb6d5f2a2">
+<CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2 type_name="CyDesigner.Common.ProjMgmt.GUI.CyDependenciesCustomData" version="1">
+<dictName v=".\PsocWagen.cydsn\PsocWagen.cyprj">
+<listName />
+</dictName>
+</CyGuid_70084457-cd6a-4593-9ed0-7f6eeb432dc2>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\PsocWagen.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\PsocWagen.cydsn\PsocWagen.cydwr" />
+<name v=".\PsocWagen.cydsn\main.c" />
+<name v=".\PsocWagen.cydsn\Wagen.h" />
+<name v=".\PsocWagen.cydsn\Wagen.c" />
+<name v=".\PsocWagen.cydsn\UART.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1098, 495" SelectedTabbedMdiWindow="90900fce-0179-4579-8b50-c18522df673d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="8017b4b4-91fa-48a8-b9e6-7c80146f4832" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\TopDesign\TopDesign.cysch" Guid="883883ce-d023-4d68-9c81-3fbf320906f6" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\PsocWagen.cydwr" Guid="ed11fa3f-59ff-4c97-9dec-018bc6cb7fc2" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\main.c" Guid="90900fce-0179-4579-8b50-c18522df673d" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\Wagen.h" Guid="37cd39c4-fa2e-4e7b-9dd7-1c634d47d62b" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\Wagen.c" Guid="d929cc40-eee3-4479-a7bd-13adb821f48d" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\UART.c" Guid="7045a2dd-7741-4792-8008-ef478f56bb9d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>
