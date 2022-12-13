@@ -1,5 +1,5 @@
 -- Project:   PsocWagen
--- Generated: 12/11/2022 20:34:02
+-- Generated: 12/13/2022 16:03:05
 -- PSoC Creator  4.4
 
 ENTITY PsocWagen IS
@@ -2133,7 +2133,7 @@ BEGIN
             status_1 => open,
             status_0 => open);
 
-    isr_rcx:interrupt
+    RCX_ISR:interrupt
         GENERIC MAP(
             int_type => "10",
             is_nmi => 0)

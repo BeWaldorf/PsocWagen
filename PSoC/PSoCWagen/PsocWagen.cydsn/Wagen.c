@@ -30,7 +30,7 @@ struct Kanten rechts;
 uint8 kantArr[2] = {LINKS,RECHTS};
 uint8 lijnArr[3] = {2,3,5};
 uint8 vermogensArr[2]={0,0};
-uint8 commArr[5];
+uint8 commArr[3];
 
 void wagen_init(){
     links.starter = &VermogenLinks_Start;
@@ -100,11 +100,9 @@ uint8 lijnCheck(){
     return lijn;
 }   
 void commArrMaker(){
-    commArr[0] = BEGIN;
-    commArr[1] = lijnCheck();
-    commArr[2] = getVermogen(LINKS);
-    commArr[3] = getVermogen(RECHTS);
-    commArr[4] = EIND;
+    commArr[0] = lijnCheck();
+    commArr[1] = getVermogen(LINKS);
+    commArr[2] = getVermogen(RECHTS);
 }
 
 void snelheidsregelaar(uint8 linker,uint8 rechter){

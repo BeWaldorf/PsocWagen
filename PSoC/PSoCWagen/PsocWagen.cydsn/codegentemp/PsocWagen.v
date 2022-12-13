@@ -1,6 +1,6 @@
 // ======================================================================
 // PsocWagen.v generated from TopDesign.cysch
-// 12/11/2022 at 20:33
+// 12/13/2022 at 16:02
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1643,7 +1643,7 @@ module top ;
 
 	cy_isr_v1_0
 		#(.int_type(2'b10))
-		isr_rcx
+		RCX_ISR
 		 (.int_signal(Net_1303));
 
 

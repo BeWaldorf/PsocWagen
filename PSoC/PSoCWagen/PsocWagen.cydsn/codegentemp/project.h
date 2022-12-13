@@ -37,7 +37,7 @@
 #include "GeenIsr1.h"
 #include "GeenIsr2_aliases.h"
 #include "GeenIsr2.h"
-#include "isr_rcx.h"
+#include "RCX_ISR.h"
 #include "RTOS_FreeRTOS.h"
 #include "RTOS_FreeRTOSConfig.h"
 #include "RTOS_READ_ME.h"

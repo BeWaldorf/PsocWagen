@@ -105,7 +105,7 @@ set_io "LichtLinks(0)" iocell 2 1
 set_location "\VermogenLinks:PWMUDB:genblk1:ctrlreg\" controlcell 1 2 6 
 set_location "\VermogenRechts:PWMUDB:genblk1:ctrlreg\" controlcell 0 1 6 
 set_location "ClockBlock" clockblockcell -1 -1 0
-set_location "isr_rcx" interrupt -1 -1 0
+set_location "RCX_ISR" interrupt -1 -1 0
 set_io "GeenIsr0(0)" iocell 5 5
 set_io "MotorRechts(0)" iocell 4 2
 set_io "Rx_TRX(0)" iocell 6 6

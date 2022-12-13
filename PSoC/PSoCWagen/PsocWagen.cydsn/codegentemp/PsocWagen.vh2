@@ -2,7 +2,7 @@
 --	Conversion of PsocWagen.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Dec 11 20:34:00 2022
+--	Tue Dec 13 16:03:04 2022
 --
 
 USE cypress.cypress.all;
@@ -3099,7 +3099,7 @@ Tx_RCX:cy_psoc3_pins_v1_10
 		out_clock_en=>tmpOE__LichtLinks_net_0,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__Tx_RCX_net_0);
-isr_rcx:cy_isr_v1_0
+RCX_ISR:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
 	PORT MAP(int_signal=>Net_1303);

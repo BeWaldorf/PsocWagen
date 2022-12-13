@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: isr_rcx.c  
+* File Name: RCX_ISR.c  
 * Version 1.71
 *
 *  Description:
@@ -18,15 +18,15 @@
 
 #include <cydevice_trm.h>
 #include <CyLib.h>
-#include <isr_rcx.h>
+#include <RCX_ISR.h>
 #include "cyapicallbacks.h"
 
-#if !defined(isr_rcx__REMOVED) /* Check for removal by optimization */
+#if !defined(RCX_ISR__REMOVED) /* Check for removal by optimization */
 
 /*******************************************************************************
 *  Place your includes, defines and code here 
 ********************************************************************************/
-/* `#START isr_rcx_intc` */
+/* `#START RCX_ISR_intc` */
 
 /* `#END` */
 
@@ -42,7 +42,7 @@ CY_ISR_PROTO(IntDefaultHandler);
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_Start
+* Function Name: RCX_ISR_Start
 ********************************************************************************
 *
 * Summary:
@@ -58,24 +58,24 @@ CY_ISR_PROTO(IntDefaultHandler);
 *   None
 *
 *******************************************************************************/
-void isr_rcx_Start(void)
+void RCX_ISR_Start(void)
 {
     /* For all we know the interrupt is active. */
-    isr_rcx_Disable();
+    RCX_ISR_Disable();
 
-    /* Set the ISR to point to the isr_rcx Interrupt. */
-    isr_rcx_SetVector(&isr_rcx_Interrupt);
+    /* Set the ISR to point to the RCX_ISR Interrupt. */
+    RCX_ISR_SetVector(&RCX_ISR_Interrupt);
 
     /* Set the priority. */
-    isr_rcx_SetPriority((uint8)isr_rcx_INTC_PRIOR_NUMBER);
+    RCX_ISR_SetPriority((uint8)RCX_ISR_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    isr_rcx_Enable();
+    RCX_ISR_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_StartEx
+* Function Name: RCX_ISR_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -101,24 +101,24 @@ void isr_rcx_Start(void)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_StartEx(cyisraddress address)
+void RCX_ISR_StartEx(cyisraddress address)
 {
     /* For all we know the interrupt is active. */
-    isr_rcx_Disable();
+    RCX_ISR_Disable();
 
-    /* Set the ISR to point to the isr_rcx Interrupt. */
-    isr_rcx_SetVector(address);
+    /* Set the ISR to point to the RCX_ISR Interrupt. */
+    RCX_ISR_SetVector(address);
 
     /* Set the priority. */
-    isr_rcx_SetPriority((uint8)isr_rcx_INTC_PRIOR_NUMBER);
+    RCX_ISR_SetPriority((uint8)RCX_ISR_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    isr_rcx_Enable();
+    RCX_ISR_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_Stop
+* Function Name: RCX_ISR_Stop
 ********************************************************************************
 *
 * Summary:
@@ -131,22 +131,22 @@ void isr_rcx_StartEx(cyisraddress address)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_Stop(void)
+void RCX_ISR_Stop(void)
 {
     /* Disable this interrupt. */
-    isr_rcx_Disable();
+    RCX_ISR_Disable();
 
     /* Set the ISR to point to the passive one. */
-    isr_rcx_SetVector(&IntDefaultHandler);
+    RCX_ISR_SetVector(&IntDefaultHandler);
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_Interrupt
+* Function Name: RCX_ISR_Interrupt
 ********************************************************************************
 *
 * Summary:
-*   The default Interrupt Service Routine for isr_rcx.
+*   The default Interrupt Service Routine for RCX_ISR.
 *
 *   Add custom code between the coments to keep the next version of this file
 *   from over writting your code.
@@ -157,27 +157,27 @@ void isr_rcx_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(isr_rcx_Interrupt)
+CY_ISR(RCX_ISR_Interrupt)
 {
-    #ifdef isr_rcx_INTERRUPT_INTERRUPT_CALLBACK
-        isr_rcx_Interrupt_InterruptCallback();
-    #endif /* isr_rcx_INTERRUPT_INTERRUPT_CALLBACK */ 
+    #ifdef RCX_ISR_INTERRUPT_INTERRUPT_CALLBACK
+        RCX_ISR_Interrupt_InterruptCallback();
+    #endif /* RCX_ISR_INTERRUPT_INTERRUPT_CALLBACK */ 
 
     /*  Place your Interrupt code here. */
-    /* `#START isr_rcx_Interrupt` */
+    /* `#START RCX_ISR_Interrupt` */
 
     /* `#END` */
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_SetVector
+* Function Name: RCX_ISR_SetVector
 ********************************************************************************
 *
 * Summary:
-*   Change the ISR vector for the Interrupt. Note calling isr_rcx_Start
+*   Change the ISR vector for the Interrupt. Note calling RCX_ISR_Start
 *   will override any effect this method would have had. To set the vector 
-*   before the component has been started use isr_rcx_StartEx instead.
+*   before the component has been started use RCX_ISR_StartEx instead.
 * 
 *   When defining ISR functions, the CY_ISR and CY_ISR_PROTO macros should be 
 *   used to provide consistent definition across compilers:
@@ -197,18 +197,18 @@ CY_ISR(isr_rcx_Interrupt)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_SetVector(cyisraddress address)
+void RCX_ISR_SetVector(cyisraddress address)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_rcx__INTC_NUMBER] = address;
+    ramVectorTable[CYINT_IRQ_BASE + (uint32)RCX_ISR__INTC_NUMBER] = address;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_GetVector
+* Function Name: RCX_ISR_GetVector
 ********************************************************************************
 *
 * Summary:
@@ -221,26 +221,26 @@ void isr_rcx_SetVector(cyisraddress address)
 *   Address of the ISR in the interrupt vector table.
 *
 *******************************************************************************/
-cyisraddress isr_rcx_GetVector(void)
+cyisraddress RCX_ISR_GetVector(void)
 {
     cyisraddress * ramVectorTable;
 
     ramVectorTable = (cyisraddress *) *CYINT_VECT_TABLE;
 
-    return ramVectorTable[CYINT_IRQ_BASE + (uint32)isr_rcx__INTC_NUMBER];
+    return ramVectorTable[CYINT_IRQ_BASE + (uint32)RCX_ISR__INTC_NUMBER];
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_SetPriority
+* Function Name: RCX_ISR_SetPriority
 ********************************************************************************
 *
 * Summary:
 *   Sets the Priority of the Interrupt. 
 *
-*   Note calling isr_rcx_Start or isr_rcx_StartEx will 
+*   Note calling RCX_ISR_Start or RCX_ISR_StartEx will 
 *   override any effect this API would have had. This API should only be called
-*   after isr_rcx_Start or isr_rcx_StartEx has been called. 
+*   after RCX_ISR_Start or RCX_ISR_StartEx has been called. 
 *   To set the initial priority for the component, use the Design-Wide Resources
 *   Interrupt Editor.
 *
@@ -255,14 +255,14 @@ cyisraddress isr_rcx_GetVector(void)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_SetPriority(uint8 priority)
+void RCX_ISR_SetPriority(uint8 priority)
 {
-    *isr_rcx_INTC_PRIOR = priority << 5;
+    *RCX_ISR_INTC_PRIOR = priority << 5;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_GetPriority
+* Function Name: RCX_ISR_GetPriority
 ********************************************************************************
 *
 * Summary:
@@ -277,19 +277,19 @@ void isr_rcx_SetPriority(uint8 priority)
 *    PSoC 4: Priority is from 0 to 3.
 *
 *******************************************************************************/
-uint8 isr_rcx_GetPriority(void)
+uint8 RCX_ISR_GetPriority(void)
 {
     uint8 priority;
 
 
-    priority = *isr_rcx_INTC_PRIOR >> 5;
+    priority = *RCX_ISR_INTC_PRIOR >> 5;
 
     return priority;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_Enable
+* Function Name: RCX_ISR_Enable
 ********************************************************************************
 *
 * Summary:
@@ -304,15 +304,15 @@ uint8 isr_rcx_GetPriority(void)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_Enable(void)
+void RCX_ISR_Enable(void)
 {
     /* Enable the general interrupt. */
-    *isr_rcx_INTC_SET_EN = isr_rcx__INTC_MASK;
+    *RCX_ISR_INTC_SET_EN = RCX_ISR__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_GetState
+* Function Name: RCX_ISR_GetState
 ********************************************************************************
 *
 * Summary:
@@ -325,15 +325,15 @@ void isr_rcx_Enable(void)
 *   1 if enabled, 0 if disabled.
 *
 *******************************************************************************/
-uint8 isr_rcx_GetState(void)
+uint8 RCX_ISR_GetState(void)
 {
     /* Get the state of the general interrupt. */
-    return ((*isr_rcx_INTC_SET_EN & (uint32)isr_rcx__INTC_MASK) != 0u) ? 1u:0u;
+    return ((*RCX_ISR_INTC_SET_EN & (uint32)RCX_ISR__INTC_MASK) != 0u) ? 1u:0u;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_Disable
+* Function Name: RCX_ISR_Disable
 ********************************************************************************
 *
 * Summary:
@@ -346,15 +346,15 @@ uint8 isr_rcx_GetState(void)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_Disable(void)
+void RCX_ISR_Disable(void)
 {
     /* Disable the general interrupt. */
-    *isr_rcx_INTC_CLR_EN = isr_rcx__INTC_MASK;
+    *RCX_ISR_INTC_CLR_EN = RCX_ISR__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_SetPending
+* Function Name: RCX_ISR_SetPending
 ********************************************************************************
 *
 * Summary:
@@ -373,14 +373,14 @@ void isr_rcx_Disable(void)
 *   interrupts).
 *
 *******************************************************************************/
-void isr_rcx_SetPending(void)
+void RCX_ISR_SetPending(void)
 {
-    *isr_rcx_INTC_SET_PD = isr_rcx__INTC_MASK;
+    *RCX_ISR_INTC_SET_PD = RCX_ISR__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: isr_rcx_ClearPending
+* Function Name: RCX_ISR_ClearPending
 ********************************************************************************
 *
 * Summary:
@@ -398,9 +398,9 @@ void isr_rcx_SetPending(void)
 *   None
 *
 *******************************************************************************/
-void isr_rcx_ClearPending(void)
+void RCX_ISR_ClearPending(void)
 {
-    *isr_rcx_INTC_CLR_PD = isr_rcx__INTC_MASK;
+    *RCX_ISR_INTC_CLR_PD = RCX_ISR__INTC_MASK;
 }
 
 #endif /* End check for removal by optimization */

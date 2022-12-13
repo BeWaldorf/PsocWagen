@@ -52,8 +52,8 @@
   <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\GeenIsr2_aliases.h" value="HEADER;;;;;GeenIsr2" />
   <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\GeenIsr2.c" value="SOURCE_C;CortexM3;;;;GeenIsr2" />
   <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\GeenIsr2.h" value="HEADER;;;;;GeenIsr2" />
-  <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\isr_rcx.c" value="SOURCE_C;CortexM3;;;;isr_rcx" />
-  <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\isr_rcx.h" value="HEADER;;;;;isr_rcx" />
+  <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\RCX_ISR.c" value="SOURCE_C;CortexM3;;;;RCX_ISR" />
+  <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\RCX_ISR.h" value="HEADER;;;;;RCX_ISR" />
   <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\RTOS_FreeRTOS.h" value="HEADER;;;;;RTOS" />
   <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\RTOS_FreeRTOSConfig.h" value="HEADER;;;;;RTOS" />
   <file name="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\codegentemp\RTOS_FreeRTOSConfig.c" value="SOURCE_C;CortexM3;;;;RTOS" />
