@@ -1,4 +1,4 @@
---------------- Build Started: 12/14/2022 01:23:19 Project: PsocWagen, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 12/14/2022 01:32:38 Project: PsocWagen, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 cydsfit.exe -.appdatapath "C:\Users\df16\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4" -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\PsocWagen.cyprj -d CY8C5888LTI-LP097 -s G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 Elaborating Design...
 HDL Generation...
@@ -86,6 +86,6 @@ No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\CortexM3\ARM_GCC_541\Debug\PsocWagen.elf
-Flash used: 7302 of 262144 bytes (2,8%).
+Flash used: 7278 of 262144 bytes (2,8%).
 SRAM used: 18155 of 65536 bytes (27,7%). Stack: 2201 bytes. Heap: 4761 bytes.
---------------- Build Succeeded: 12/14/2022 01:24:10 ---------------
+--------------- Build Succeeded: 12/14/2022 01:33:25 ---------------

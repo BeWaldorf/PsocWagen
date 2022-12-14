@@ -2,7 +2,7 @@
 --	Conversion of PsocWagen.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Dec 14 01:23:29 2022
+--	Wed Dec 14 01:32:48 2022
 --
 
 USE cypress.cypress.all;

@@ -710,9 +710,9 @@ Discarded input sections
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
  .bss           0x00000000        0x2 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
  .text.USB_Init
-                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
  .text.USB_Enable
-                0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
  .text.USB_Start
                 0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
  .text.USB_Stop
@@ -950,7 +950,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00000000     0x1b52
+.text           0x00000000     0x1b62
  CREATE_OBJECT_SYMBOLS
                 0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -1008,368 +1008,367 @@ END GROUP
  .text.CYCONFIGCPY
                 0x000003ac        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.cyfitter_cfg
-                0x000003b4      0x134 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000003b4      0x144 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
                 0x000003b4                cyfitter_cfg
  .text.IntDefaultHandler
-                0x000004e8       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x000004e8                IntDefaultHandler
- .text.Start_c  0x000004f8       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x000004f8                Start_c
+                0x000004f8       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000004f8                IntDefaultHandler
+ .text.Start_c  0x00000508       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000508                Start_c
  .text.initialize_psoc
-                0x00000544       0x68 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00000544                initialize_psoc
+                0x00000554       0x68 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000554                initialize_psoc
  .text.VermogenLinks_Enable
-                0x000005ac       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x000005ac                VermogenLinks_Enable
- .text.VermogenLinks_Stop
                 0x000005bc       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x000005bc                VermogenLinks_Stop
+                0x000005bc                VermogenLinks_Enable
+ .text.VermogenLinks_Stop
+                0x000005cc       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x000005cc                VermogenLinks_Stop
  .text.VermogenLinks_WriteCounter
-                0x000005cc        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x000005cc                VermogenLinks_WriteCounter
+                0x000005dc        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x000005dc                VermogenLinks_WriteCounter
  .text.VermogenLinks_WritePeriod
-                0x000005d8        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x000005d8                VermogenLinks_WritePeriod
+                0x000005e8        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x000005e8                VermogenLinks_WritePeriod
  .text.VermogenLinks_WriteCompare
-                0x000005e4        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x000005e4                VermogenLinks_WriteCompare
+                0x000005f4        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x000005f4                VermogenLinks_WriteCompare
  .text.VermogenLinks_Init
-                0x000005f0       0x34 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x000005f0                VermogenLinks_Init
+                0x00000600       0x34 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x00000600                VermogenLinks_Init
  .text.VermogenLinks_Start
-                0x00000624       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x00000624                VermogenLinks_Start
+                0x00000634       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x00000634                VermogenLinks_Start
  .text.VermogenLinks_ReadCompare
-                0x00000640        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
-                0x00000640                VermogenLinks_ReadCompare
+                0x00000650        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+                0x00000650                VermogenLinks_ReadCompare
  .text.VermogenRechts_Enable
-                0x0000064c       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x0000064c                VermogenRechts_Enable
- .text.VermogenRechts_Stop
                 0x0000065c       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x0000065c                VermogenRechts_Stop
+                0x0000065c                VermogenRechts_Enable
+ .text.VermogenRechts_Stop
+                0x0000066c       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x0000066c                VermogenRechts_Stop
  .text.VermogenRechts_WriteCounter
-                0x0000066c        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x0000066c                VermogenRechts_WriteCounter
+                0x0000067c        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x0000067c                VermogenRechts_WriteCounter
  .text.VermogenRechts_WritePeriod
-                0x00000678        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x00000678                VermogenRechts_WritePeriod
+                0x00000688        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x00000688                VermogenRechts_WritePeriod
  .text.VermogenRechts_WriteCompare
-                0x00000684        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x00000684                VermogenRechts_WriteCompare
+                0x00000694        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x00000694                VermogenRechts_WriteCompare
  .text.VermogenRechts_Init
-                0x00000690       0x34 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x00000690                VermogenRechts_Init
+                0x000006a0       0x34 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x000006a0                VermogenRechts_Init
  .text.VermogenRechts_Start
-                0x000006c4       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x000006c4                VermogenRechts_Start
+                0x000006d4       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x000006d4                VermogenRechts_Start
  .text.VermogenRechts_ReadCompare
-                0x000006e0        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
-                0x000006e0                VermogenRechts_ReadCompare
+                0x000006f0        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+                0x000006f0                VermogenRechts_ReadCompare
  .text.UART_TRX_Init
-                0x000006ec       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
-                0x000006ec                UART_TRX_Init
+                0x000006fc       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
+                0x000006fc                UART_TRX_Init
  .text.setupFreeRTOS
-                0x00000714       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_FreeRTOSConfig.o)
-                0x00000714                setupFreeRTOS
+                0x00000724       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_FreeRTOSConfig.o)
+                0x00000724                setupFreeRTOS
  .text.prvTaskExitError
-                0x0000073c       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x0000074c       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
  .text.prvPortStartFirstTask
-                0x0000075c       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x0000076c       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
  .text.pxPortInitialiseStack
-                0x0000077c       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x0000077c                pxPortInitialiseStack
+                0x0000078c       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x0000078c                pxPortInitialiseStack
  .text.vPortSVCHandler
-                0x000007a0       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x000007a0                vPortSVCHandler
+                0x000007b0       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x000007b0                vPortSVCHandler
  .text.vPortEnterCritical
-                0x000007c4       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x000007c4                vPortEnterCritical
+                0x000007d4       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x000007d4                vPortEnterCritical
  .text.vPortExitCritical
-                0x000007e4       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x000007e4                vPortExitCritical
- *fill*         0x000007f8        0x8 
+                0x000007f4       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x000007f4                vPortExitCritical
+ *fill*         0x00000808        0x8 
  .text.xPortPendSVHandler
-                0x00000800       0x44 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x00000800                xPortPendSVHandler
+                0x00000810       0x44 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x00000810                xPortPendSVHandler
  .text.xPortSysTickHandler
-                0x00000844       0x2c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x00000844                xPortSysTickHandler
+                0x00000854       0x2c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x00000854                xPortSysTickHandler
  .text.vPortSetupTimerInterrupt
-                0x00000870       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x00000870                vPortSetupTimerInterrupt
+                0x00000880       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x00000880                vPortSetupTimerInterrupt
  .text.xPortStartScheduler
-                0x00000894       0x30 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
-                0x00000894                xPortStartScheduler
+                0x000008a4       0x30 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+                0x000008a4                xPortStartScheduler
  .text.prvResetNextTaskUnblockTime
-                0x000008c4       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x000008d4       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvDeleteTCB
-                0x000008e8       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x000008f8       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvInitialiseNewTask
-                0x000008fc       0x90 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x0000090c       0x90 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvInitialiseTaskLists
-                0x0000098c       0x58 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x0000099c       0x58 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvAddNewTaskToReadyList
-                0x000009e4       0xac .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x000009f4       0xac .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvCheckTasksWaitingTermination
-                0x00000a90       0x44 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000aa0       0x44 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvIdleTask
-                0x00000ad4       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000ae4       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.prvAddCurrentTaskToDelayedList
-                0x00000afc       0x68 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000b0c       0x68 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
  .text.xTaskCreate
-                0x00000b64       0x64 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000b64                xTaskCreate
+                0x00000b74       0x64 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000b74                xTaskCreate
  .text.vTaskStartScheduler
-                0x00000bc8       0x60 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000bc8                vTaskStartScheduler
+                0x00000bd8       0x60 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000bd8                vTaskStartScheduler
  .text.vTaskSuspendAll
-                0x00000c28       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000c28                vTaskSuspendAll
+                0x00000c38       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000c38                vTaskSuspendAll
  .text.xTaskGetTickCount
-                0x00000c3c        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000c3c                xTaskGetTickCount
+                0x00000c4c        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000c4c                xTaskGetTickCount
  .text.xTaskIncrementTick
-                0x00000c48       0xe8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000c48                xTaskIncrementTick
+                0x00000c58       0xe8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000c58                xTaskIncrementTick
  .text.xTaskResumeAll
-                0x00000d30       0xd8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000d30                xTaskResumeAll
+                0x00000d40       0xd8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000d40                xTaskResumeAll
  .text.vTaskSwitchContext
-                0x00000e08       0x80 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000e08                vTaskSwitchContext
+                0x00000e18       0x80 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000e18                vTaskSwitchContext
  .text.vTaskPlaceOnEventList
-                0x00000e88       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000e88                vTaskPlaceOnEventList
+                0x00000e98       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000e98                vTaskPlaceOnEventList
  .text.vTaskPlaceOnEventListRestricted
-                0x00000ea8       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000ea8                vTaskPlaceOnEventListRestricted
+                0x00000eb8       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000eb8                vTaskPlaceOnEventListRestricted
  .text.xTaskRemoveFromEventList
-                0x00000ed0       0x74 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000ed0                xTaskRemoveFromEventList
+                0x00000ee0       0x74 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000ee0                xTaskRemoveFromEventList
  .text.vTaskInternalSetTimeOutState
-                0x00000f44       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000f44                vTaskInternalSetTimeOutState
+                0x00000f54       0x14 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000f54                vTaskInternalSetTimeOutState
  .text.xTaskCheckForTimeOut
-                0x00000f58       0x5c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000f58                xTaskCheckForTimeOut
+                0x00000f68       0x5c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000f68                xTaskCheckForTimeOut
  .text.vTaskMissedYield
-                0x00000fb4       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000fb4                vTaskMissedYield
+                0x00000fc4       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000fc4                vTaskMissedYield
  .text.xTaskGetSchedulerState
-                0x00000fc4       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
-                0x00000fc4                xTaskGetSchedulerState
+                0x00000fd4       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+                0x00000fd4                xTaskGetSchedulerState
  .text.vListInitialise
-                0x00000fe4       0x18 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
-                0x00000fe4                vListInitialise
+                0x00000ff4       0x18 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+                0x00000ff4                vListInitialise
  .text.vListInitialiseItem
-                0x00000ffc        0x8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
-                0x00000ffc                vListInitialiseItem
+                0x0000100c        0x8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+                0x0000100c                vListInitialiseItem
  .text.vListInsertEnd
-                0x00001004       0x18 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
-                0x00001004                vListInsertEnd
+                0x00001014       0x18 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+                0x00001014                vListInsertEnd
  .text.vListInsert
-                0x0000101c       0x34 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
-                0x0000101c                vListInsert
+                0x0000102c       0x34 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+                0x0000102c                vListInsert
  .text.uxListRemove
-                0x00001050       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
-                0x00001050                uxListRemove
+                0x00001060       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+                0x00001060                uxListRemove
  .text.prvIsQueueFull
-                0x00001078       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001088       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.prvIsQueueEmpty
-                0x00001098       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x000010a8       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.prvCopyDataToQueue
-                0x000010b4       0x54 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x000010c4       0x54 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.prvNotifyQueueSetContainer
-                0x00001108       0x50 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001118       0x50 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.prvCopyDataFromQueue
-                0x00001158       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001168       0x24 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.prvUnlockQueue
-                0x0000117c       0x78 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x0000118c       0x78 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.xQueueGenericReset
-                0x000011f4       0x6c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x000011f4                xQueueGenericReset
+                0x00001204       0x6c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001204                xQueueGenericReset
  .text.prvInitialiseNewQueue
-                0x00001260       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001270       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
  .text.xQueueGenericCreate
-                0x00001280       0x30 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x00001280                xQueueGenericCreate
+                0x00001290       0x30 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001290                xQueueGenericCreate
  .text.xQueueGenericSend
-                0x000012b0      0x130 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x000012b0                xQueueGenericSend
+                0x000012c0      0x130 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x000012c0                xQueueGenericSend
  .text.xQueueGenericSendFromISR
-                0x000013e0       0xb0 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x000013e0                xQueueGenericSendFromISR
+                0x000013f0       0xb0 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x000013f0                xQueueGenericSendFromISR
  .text.xQueueReceive
-                0x00001490       0xf8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x00001490                xQueueReceive
+                0x000014a0       0xf8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x000014a0                xQueueReceive
  .text.vQueueAddToRegistry
-                0x00001588       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x00001588                vQueueAddToRegistry
+                0x00001598       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x00001598                vQueueAddToRegistry
  .text.vQueueWaitForMessageRestricted
-                0x000015b0       0x4c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
-                0x000015b0                vQueueWaitForMessageRestricted
+                0x000015c0       0x4c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+                0x000015c0                vQueueWaitForMessageRestricted
  .text.prvGetNextExpireTime
-                0x000015fc       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x0000160c       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvInsertTimerInActiveList
-                0x0000161c       0x44 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x0000162c       0x44 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvCheckForValidListAndQueue
-                0x00001660       0x48 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x00001670       0x48 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.xTimerCreateTimerTask
-                0x000016a8       0x3c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
-                0x000016a8                xTimerCreateTimerTask
+                0x000016b8       0x3c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x000016b8                xTimerCreateTimerTask
  .text.xTimerGenericCommand
-                0x000016e4       0x58 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
-                0x000016e4                xTimerGenericCommand
+                0x000016f4       0x58 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x000016f4                xTimerGenericCommand
  .text.prvSwitchTimerLists
-                0x0000173c       0x64 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x0000174c       0x64 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvSampleTimeNow
-                0x000017a0       0x2c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x000017b0       0x2c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvProcessExpiredTimer
-                0x000017cc       0x58 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x000017dc       0x58 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvProcessTimerOrBlockTask
-                0x00001824       0x70 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x00001834       0x70 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvProcessReceivedCommands
-                0x00001894       0xd4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x000018a4       0xd4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.prvTimerTask
-                0x00001968       0x18 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x00001978       0x18 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .text.UART_RCX_Init
-                0x00001980       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
-                0x00001980                UART_RCX_Init
+                0x00001990       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
+                0x00001990                UART_RCX_Init
  .text.UART_RCX_GetChar
-                0x000019a8       0x2c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
-                0x000019a8                UART_RCX_GetChar
- .text.CyHalt   0x000019d4        0x4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
-                0x000019d4                CyHalt
+                0x000019b8       0x2c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
+                0x000019b8                UART_RCX_GetChar
+ .text.CyHalt   0x000019e4        0x4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
+                0x000019e4                CyHalt
  .text.CyIntSetSysVector
-                0x000019d8       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
-                0x000019d8                CyIntSetSysVector
+                0x000019e8       0x28 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
+                0x000019e8                CyIntSetSysVector
  .text.RCX_ISR_SetVector
-                0x00001a00        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
-                0x00001a00                RCX_ISR_SetVector
+                0x00001a10        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+                0x00001a10                RCX_ISR_SetVector
  .text.RCX_ISR_SetPriority
-                0x00001a0c       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
-                0x00001a0c                RCX_ISR_SetPriority
+                0x00001a1c       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+                0x00001a1c                RCX_ISR_SetPriority
  .text.RCX_ISR_Enable
-                0x00001a1c        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
-                0x00001a1c                RCX_ISR_Enable
+                0x00001a2c        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+                0x00001a2c                RCX_ISR_Enable
  .text.RCX_ISR_Disable
-                0x00001a28        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
-                0x00001a28                RCX_ISR_Disable
+                0x00001a38        0xc .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+                0x00001a38                RCX_ISR_Disable
  .text.RCX_ISR_StartEx
-                0x00001a34       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
-                0x00001a34                RCX_ISR_StartEx
- .text          0x00001a50       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyBootAsmGnu.o)
-                0x00001a50                CyDelayCycles
-                0x00001a60                CyEnterCriticalSection
-                0x00001a68                CyExitCriticalSection
+                0x00001a44       0x1c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+                0x00001a44                RCX_ISR_StartEx
+ .text          0x00001a60       0x20 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyBootAsmGnu.o)
+                0x00001a60                CyDelayCycles
+                0x00001a70                CyEnterCriticalSection
+                0x00001a78                CyExitCriticalSection
  .text.pvPortMalloc
-                0x00001a70       0x60 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
-                0x00001a70                pvPortMalloc
+                0x00001a80       0x60 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
+                0x00001a80                pvPortMalloc
  .text.vPortFree
-                0x00001ad0        0x4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
-                0x00001ad0                vPortFree
- .text.__errno  0x00001ad4        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x00001ad4                __errno
+                0x00001ae0        0x4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
+                0x00001ae0                vPortFree
+ .text.__errno  0x00001ae4        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00001ae4                __errno
  .text.__libc_init_array
-                0x00001ae0       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x00001ae0                __libc_init_array
- .text.memcpy   0x00001b2c       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x00001b2c                memcpy
- .text.memset   0x00001b42       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x00001b42                memset
+                0x00001af0       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00001af0                __libc_init_array
+ .text.memcpy   0x00001b3c       0x16 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00001b3c                memcpy
+ .text.memset   0x00001b52       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00001b52                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x00001b52        0x0 linker stubs
+ .glue_7t       0x00001b62        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00001b52        0x0 linker stubs
+ .glue_7        0x00001b62        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x00001b52        0x0 linker stubs
+ .vfp11_veneer  0x00001b62        0x0 linker stubs
  *(.bootloader)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x00001b54        0x0
- .v4_bx         0x00001b54        0x0 linker stubs
+.v4_bx          0x00001b64        0x0
+ .v4_bx         0x00001b64        0x0 linker stubs
 
-.iplt           0x00001b54        0x0
- .iplt          0x00001b54        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x00001b64        0x0
+ .iplt          0x00001b64        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00001b54        0x4
+.eh_frame       0x00001b64        0x4
  *(.eh_frame)
- .eh_frame      0x00001b54        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .eh_frame      0x00001b54        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .eh_frame      0x00001b64        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00001b64        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
                 [!provide]                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001b58                __exidx_end = .
+                0x00001b68                __exidx_end = .
 
-.rodata         0x00001b58       0xb8
+.rodata         0x00001b68       0x90
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00001b58       0x64 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .rodata        0x00001b68       0x40 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .rodata.str1.4
-                0x00001bbc        0x5 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
- *fill*         0x00001bc1        0x3 
+                0x00001ba8        0x5 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+ *fill*         0x00001bad        0x3 
  .rodata.str1.4
-                0x00001bc4       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+                0x00001bb0       0x10 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
  .rodata.str1.1
-                0x00001bd4        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x00001bd8                . = ALIGN (0x4)
- *fill*         0x00001bd6        0x2 
+                0x00001bc0        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00001bc4                . = ALIGN (0x4)
+ *fill*         0x00001bc2        0x2 
  *(.init)
- .init          0x00001bd8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x00001bd8                _init
- .init          0x00001bdc        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x00001be4                . = ALIGN (0x4)
-                0x00001be4                __preinit_array_start = .
+ .init          0x00001bc4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00001bc4                _init
+ .init          0x00001bc8        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00001bd0                . = ALIGN (0x4)
+                0x00001bd0                __preinit_array_start = .
  *(.preinit_array)
-                0x00001be4                __preinit_array_end = .
-                0x00001be4                . = ALIGN (0x4)
-                0x00001be4                __init_array_start = .
+                0x00001bd0                __preinit_array_end = .
+                0x00001bd0                . = ALIGN (0x4)
+                0x00001bd0                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00001be4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .init_array    0x00001be8        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00001bec                __init_array_end = .
-                0x00001bec                . = ALIGN (0x4)
+ .init_array    0x00001bd0        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x00001bd4        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00001bd8                __init_array_end = .
+                0x00001bd8                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00001bec        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x00001bec                _fini
- .fini          0x00001bf0        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x00001bf8                . = ALIGN (0x4)
-                0x00001bf8                __fini_array_start = .
+ .fini          0x00001bd8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00001bd8                _fini
+ .fini          0x00001bdc        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00001be4                . = ALIGN (0x4)
+                0x00001be4                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00001bf8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x00001be4        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00001bfc                __fini_array_end = .
-                0x00001bfc                . = ALIGN (0x4)
+                0x00001be8                __fini_array_end = .
+                0x00001be8                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00001bfc                . = ALIGN (0x4)
+                0x00001be8                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00001bfc                . = ALIGN (0x4)
-                0x00001bfc                __cy_regions = .
-                0x00001bfc        0x4 LONG 0x1c10 __cy_region_init_ram
-                0x00001c00        0x4 LONG 0x1fff80c8 __cy_region_start_data
-                0x00001c04        0x4 LONG 0x78 __cy_region_init_size_ram
-                0x00001c08        0x4 LONG 0x2a80 __cy_region_zero_size_ram
-                0x00001c0c                __cy_regions_end = .
-                0x00001c10                . = ALIGN (0x8)
- *fill*         0x00001c0c        0x4 
-                0x00001c10                _etext = .
+                0x00001be8                . = ALIGN (0x4)
+                0x00001be8                __cy_regions = .
+                0x00001be8        0x4 LONG 0x1bf8 __cy_region_init_ram
+                0x00001bec        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00001bf0        0x4 LONG 0x78 __cy_region_init_size_ram
+                0x00001bf4        0x4 LONG 0x2a80 __cy_region_zero_size_ram
+                0x00001bf8                __cy_regions_end = .
+                0x00001bf8                . = ALIGN (0x8)
+                0x00001bf8                _etext = .
 
 .cy_checksum_exclude
-                0x00001c10        0x0
+                0x00001bf8        0x0
  *(.cy_checksum_exclude)
 
 .ramvectors     0x1fff8000       0xc0
@@ -1383,7 +1382,7 @@ END GROUP
  .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
                 0x1fff80c0                CyResetStatus
 
-.data           0x1fff80c8       0x78 load address 0x00001c10
+.data           0x1fff80c8       0x78 load address 0x00001bf8
                 0x1fff80c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -1407,10 +1406,10 @@ END GROUP
  *(.ram)
                 0x1fff8140                _edata = .
 
-.igot.plt       0x1fff8140        0x0 load address 0x00001c88
+.igot.plt       0x1fff8140        0x0 load address 0x00001c70
  .igot.plt      0x1fff8140        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8140     0x2a80 load address 0x00001c88
+.bss            0x1fff8140     0x2a80 load address 0x00001c70
                 0x1fff8140                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -1452,11 +1451,11 @@ END GROUP
                 0x1fffabc0                __end = .
                 0x1fffabc0                PROVIDE (end, .)
                 0x1fffabc0                PROVIDE (__bss_end__, .)
-                0x00001c10                __cy_region_init_ram = LOADADDR (.data)
+                0x00001bf8                __cy_region_init_ram = LOADADDR (.data)
                 0x00000078                __cy_region_init_size_ram = (_edata - ADDR (.data))
                 0x00002a80                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fffabc0     0x1299 load address 0x00001c88
+.heap           0x1fffabc0     0x1299 load address 0x00001c70
                 0x1fffabc0                . = _end
                 0x1fffbe59                . = (. + 0x1299)
  *fill*         0x1fffabc0     0x1299 
@@ -1476,9 +1475,9 @@ END GROUP
 .cyloadablemeta
  *(.cyloadablemeta)
 
-.cyconfigecc    0x80000000      0xb78
+.cyconfigecc    0x80000000      0xba4
  *(.cyconfigecc)
- .cyconfigecc   0x80000000      0xb78 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .cyconfigecc   0x80000000      0xba4 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                 0x80000000                cy_meta_configecc
 
 .cycustnvl      0x90000000        0x4
@@ -1507,8 +1506,8 @@ END GROUP
  .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                 0x90500000                cy_metadata
 
-.rel.dyn        0x00001c88        0x0 load address 0x9050000c
- .rel.iplt      0x00001c88        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.rel.dyn        0x00001c70        0x0 load address 0x9050000c
+ .rel.iplt      0x00001c70        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .stab
  *(.stab)
@@ -1596,39 +1595,39 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xba7e
+.debug_info     0x00000000     0xbaa3
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x13f .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_info    0x0000013f      0x361 .\CortexM3\ARM_GCC_541\Debug\UART.o
  .debug_info    0x000004a0      0x40f .\CortexM3\ARM_GCC_541\Debug\Wagen.o
  .debug_info    0x000008af      0x62f .\CortexM3\ARM_GCC_541\Debug\MijnTaken.o
- .debug_info    0x00000ede      0x5f2 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x000014d0      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00001609      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x000019c4      0x279 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
- .debug_info    0x00001c3d      0x279 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
- .debug_info    0x00001eb6      0x60c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
- .debug_info    0x000024c2      0x11f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr0.o)
- .debug_info    0x000025e1      0x11f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr1.o)
- .debug_info    0x00002700      0x11f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr2.o)
- .debug_info    0x0000281f      0x166 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_FreeRTOSConfig.o)
- .debug_info    0x00002985      0x358 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
- .debug_info    0x00002cdd     0x1f2e .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
- .debug_info    0x00004c0b      0x2e5 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
- .debug_info    0x00004ef0     0x1a21 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
- .debug_info    0x00006911      0xf5a .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
- .debug_info    0x0000786b      0x60c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
- .debug_info    0x00007e77      0x283 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX_IntClock.o)
- .debug_info    0x000080fa      0x283 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX_IntClock.o)
- .debug_info    0x0000837d     0x1374 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
- .debug_info    0x000096f1      0xa2a .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(cyPm.o)
- .debug_info    0x0000a11b      0x2d2 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
- .debug_info    0x0000a3ed      0x60c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
- .debug_info    0x0000a9f9      0x283 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB_IntClock.o)
- .debug_info    0x0000ac7c       0x82 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyBootAsmGnu.o)
- .debug_info    0x0000acfe      0x1e3 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
- .debug_info    0x0000aee1      0x64d .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
- .debug_info    0x0000b52e      0x550 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
+ .debug_info    0x00000ede      0x617 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x000014f5      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x0000162e      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x000019e9      0x279 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+ .debug_info    0x00001c62      0x279 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+ .debug_info    0x00001edb      0x60c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
+ .debug_info    0x000024e7      0x11f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr0.o)
+ .debug_info    0x00002606      0x11f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr1.o)
+ .debug_info    0x00002725      0x11f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr2.o)
+ .debug_info    0x00002844      0x166 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_FreeRTOSConfig.o)
+ .debug_info    0x000029aa      0x358 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+ .debug_info    0x00002d02     0x1f2e .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+ .debug_info    0x00004c30      0x2e5 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+ .debug_info    0x00004f15     0x1a21 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+ .debug_info    0x00006936      0xf5a .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+ .debug_info    0x00007890      0x60c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
+ .debug_info    0x00007e9c      0x283 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX_IntClock.o)
+ .debug_info    0x0000811f      0x283 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX_IntClock.o)
+ .debug_info    0x000083a2     0x1374 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
+ .debug_info    0x00009716      0xa2a .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(cyPm.o)
+ .debug_info    0x0000a140      0x2d2 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+ .debug_info    0x0000a412      0x60c .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
+ .debug_info    0x0000aa1e      0x283 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB_IntClock.o)
+ .debug_info    0x0000aca1       0x82 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyBootAsmGnu.o)
+ .debug_info    0x0000ad23      0x1e3 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
+ .debug_info    0x0000af06      0x64d .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
+ .debug_info    0x0000b553      0x550 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
 
 .debug_abbrev   0x00000000     0x2b9d
  *(.debug_abbrev)
@@ -1664,39 +1663,39 @@ END GROUP
  .debug_abbrev  0x00002862      0x1a7 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
  .debug_abbrev  0x00002a09      0x194 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
 
-.debug_line     0x00000000     0x5159
+.debug_line     0x00000000     0x515a
  *(.debug_line)
  .debug_line    0x00000000      0x1ab .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_line    0x000001ab      0x232 .\CortexM3\ARM_GCC_541\Debug\UART.o
  .debug_line    0x000003dd      0x24d .\CortexM3\ARM_GCC_541\Debug\Wagen.o
  .debug_line    0x0000062a      0x301 .\CortexM3\ARM_GCC_541\Debug\MijnTaken.o
- .debug_line    0x0000092b      0x1fb .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x00000b26      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x00000c67      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x00000e9b      0x142 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
- .debug_line    0x00000fdd      0x143 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
- .debug_line    0x00001120      0x2c4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
- .debug_line    0x000013e4       0x95 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr0.o)
- .debug_line    0x00001479       0x95 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr1.o)
- .debug_line    0x0000150e       0x95 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr2.o)
- .debug_line    0x000015a3      0x196 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_FreeRTOSConfig.o)
- .debug_line    0x00001739      0x307 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
- .debug_line    0x00001a40      0xabe .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
- .debug_line    0x000024fe      0x26d .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
- .debug_line    0x0000276b      0x780 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
- .debug_line    0x00002eeb      0x47b .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
- .debug_line    0x00003366      0x2c4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
- .debug_line    0x0000362a      0x180 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX_IntClock.o)
- .debug_line    0x000037aa      0x180 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX_IntClock.o)
- .debug_line    0x0000392a      0x816 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
- .debug_line    0x00004140      0x367 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(cyPm.o)
- .debug_line    0x000044a7      0x134 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
- .debug_line    0x000045db      0x2ba .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
- .debug_line    0x00004895      0x17b .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB_IntClock.o)
- .debug_line    0x00004a10       0x66 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyBootAsmGnu.o)
- .debug_line    0x00004a76      0x269 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
- .debug_line    0x00004cdf      0x21a .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
- .debug_line    0x00004ef9      0x260 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
+ .debug_line    0x0000092b      0x1fc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000b27      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000c68      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x00000e9c      0x142 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+ .debug_line    0x00000fde      0x143 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+ .debug_line    0x00001121      0x2c4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
+ .debug_line    0x000013e5       0x95 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr0.o)
+ .debug_line    0x0000147a       0x95 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr1.o)
+ .debug_line    0x0000150f       0x95 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr2.o)
+ .debug_line    0x000015a4      0x196 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_FreeRTOSConfig.o)
+ .debug_line    0x0000173a      0x307 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+ .debug_line    0x00001a41      0xabe .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+ .debug_line    0x000024ff      0x26d .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+ .debug_line    0x0000276c      0x780 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+ .debug_line    0x00002eec      0x47b .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+ .debug_line    0x00003367      0x2c4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
+ .debug_line    0x0000362b      0x180 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX_IntClock.o)
+ .debug_line    0x000037ab      0x180 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX_IntClock.o)
+ .debug_line    0x0000392b      0x816 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
+ .debug_line    0x00004141      0x367 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(cyPm.o)
+ .debug_line    0x000044a8      0x134 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+ .debug_line    0x000045dc      0x2ba .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
+ .debug_line    0x00004896      0x17b .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB_IntClock.o)
+ .debug_line    0x00004a11       0x66 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyBootAsmGnu.o)
+ .debug_line    0x00004a77      0x269 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
+ .debug_line    0x00004ce0      0x21a .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
+ .debug_line    0x00004efa      0x260 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
 
 .debug_frame    0x00000000     0x2d14
  *(.debug_frame)
@@ -1798,35 +1797,35 @@ END GROUP
  .debug_str     0x00003f92       0xac .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
                                 0x32a (size before relaxing)
 
-.debug_loc      0x00000000     0x6106
+.debug_loc      0x00000000     0x6105
  *(.debug_loc)
  .debug_loc     0x00000000      0x143 .\CortexM3\ARM_GCC_541\Debug\UART.o
  .debug_loc     0x00000143      0x1bc .\CortexM3\ARM_GCC_541\Debug\Wagen.o
  .debug_loc     0x000002ff       0xb0 .\CortexM3\ARM_GCC_541\Debug\MijnTaken.o
- .debug_loc     0x000003af      0x289 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_loc     0x00000638      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_loc     0x0000077c       0x13 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
- .debug_loc     0x0000078f       0x13 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
- .debug_loc     0x000007a2      0x258 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
- .debug_loc     0x000009fa       0x42 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr0.o)
- .debug_loc     0x00000a3c       0x42 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr1.o)
- .debug_loc     0x00000a7e       0x42 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr2.o)
- .debug_loc     0x00000ac0       0xa8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
- .debug_loc     0x00000b68     0x15cb .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
- .debug_loc     0x00002133       0x65 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
- .debug_loc     0x00002198     0x151f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
- .debug_loc     0x000036b7      0xac6 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
- .debug_loc     0x0000417d      0x258 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
- .debug_loc     0x000043d5      0x128 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX_IntClock.o)
- .debug_loc     0x000044fd      0x128 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX_IntClock.o)
- .debug_loc     0x00004625      0xa11 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
- .debug_loc     0x00005036      0x1e4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(cyPm.o)
- .debug_loc     0x0000521a       0x56 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
- .debug_loc     0x00005270      0x258 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
- .debug_loc     0x000054c8      0x128 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB_IntClock.o)
- .debug_loc     0x000055f0       0x5f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
- .debug_loc     0x0000564f      0x3b2 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
- .debug_loc     0x00005a01      0x705 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
+ .debug_loc     0x000003af      0x288 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000637      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_loc     0x0000077b       0x13 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenLinks.o)
+ .debug_loc     0x0000078e       0x13 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(VermogenRechts.o)
+ .debug_loc     0x000007a1      0x258 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX.o)
+ .debug_loc     0x000009f9       0x42 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr0.o)
+ .debug_loc     0x00000a3b       0x42 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr1.o)
+ .debug_loc     0x00000a7d       0x42 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(GeenIsr2.o)
+ .debug_loc     0x00000abf       0xa8 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_port.o)
+ .debug_loc     0x00000b67     0x15cb .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_tasks.o)
+ .debug_loc     0x00002132       0x65 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_list.o)
+ .debug_loc     0x00002197     0x151f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_queue.o)
+ .debug_loc     0x000036b6      0xac6 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_timers.o)
+ .debug_loc     0x0000417c      0x258 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX.o)
+ .debug_loc     0x000043d4      0x128 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_TRX_IntClock.o)
+ .debug_loc     0x000044fc      0x128 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(UART_RCX_IntClock.o)
+ .debug_loc     0x00004624      0xa11 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyLib.o)
+ .debug_loc     0x00005035      0x1e4 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(cyPm.o)
+ .debug_loc     0x00005219       0x56 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RCX_ISR.o)
+ .debug_loc     0x0000526f      0x258 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB.o)
+ .debug_loc     0x000054c7      0x128 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(USB_IntClock.o)
+ .debug_loc     0x000055ef       0x5f .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(RTOS_heap.o)
+ .debug_loc     0x0000564e      0x3b2 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CyFlash.o)
+ .debug_loc     0x00005a00      0x705 .\CortexM3\ARM_GCC_541\Debug\PsocWagen.a(CySpc.o)
 
 .debug_macinfo
  *(.debug_macinfo)

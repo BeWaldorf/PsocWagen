@@ -171,6 +171,40 @@
 <VisibleNodeIds>
 <v>PSoCWagen</v>
 <v>PSoCWagen\PsocWagen</v>
+<v>PSoCWagen\PsocWagen\CortexM3</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\GeenIsr0.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\GeenIsr1.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\GeenIsr2.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\getSensoren_Task.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\Klok.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\LichtLinks.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\LichtRechts.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\MijnTaken.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorLinks.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorRechts.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RCX_ISR.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RCX_Task_Task.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RCX_tx.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_croutine.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_event_groups.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_FreeRTOSConfig.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_heap.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_list.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
