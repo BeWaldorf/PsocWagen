@@ -2,10 +2,8 @@
 #include <UART.h>
 #include <Wagen.h>
 
-
-
-QueueHandle_t   motor_naar_comm, comm_naar_motor, lijn_naar_comm,
-                comm_naar_lijn, comm_naar_ESP, ESP_naar_comm;
+RingBuf rcx_buffer;
+QueueHandle_t   comm_naar_motor, comm_naar_ESP, ESP_naar_comm;
 uint8 snelheden_prod[2], snelheden_cons[2], comm_ESP_prod_data[3], comm_ESP_cons_data[3];
 int bericht = 0;
 
@@ -21,21 +19,21 @@ void opstart(){
     ESP_naar_comm = xQueueCreate(10,2);
 }
 //taak functies
-void motorSturing(){
+void motorSturingFunc(){
     while(1){
         xQueueReceive(comm_naar_motor,&snelheden_cons,10);
         snelheidsregelaar(snelheden_cons[LINKS],snelheden_cons[RECHTS]);
         vTaskDelay(100);
     }
 }
-void sensorStatus(){
+void sensorFunc(){
     while(1){
         commArrMaker();
         xQueueSend(comm_naar_ESP, &comm_ESP_prod_data, 10);
         vTaskDelay(100);
     }
 }
-void rtxFunc(){
+void trxFunc(){
     while(1){
         xQueueReceive(comm_naar_ESP, &comm_ESP_prod_data, 10);
         trx_verzend(comm_ESP_prod_data);
@@ -54,3 +52,15 @@ void rcxFunc(){
 }
 
 //taak declaraties
+void rcxTaakSetup(void *arg){
+    xTaskCreate(rcxFunc,"UART ontvanger",500,arg,1,0);
+}
+void trxTaakSetup(void *arg){
+    xTaskCreate(trxFunc,"UART verzender",500,arg,1,0);
+}
+void motorTaakSetup(void *arg){
+    xTaskCreate(motorSturingFunc,"regelt vermogen",200,arg,1,0);
+}
+void sensorTaakSetup(void *arg){
+    xTaskCreate(sensorFunc,"stelt status op",200,arg,1,0);
+}

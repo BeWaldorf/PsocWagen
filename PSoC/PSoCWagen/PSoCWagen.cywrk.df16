@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoCWagen\PsocWagen\Header Files\UART.h">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
 <ExpandedNodeIds>
 <v>PSoCWagen</v>
 <v>PSoCWagen\PsocWagen</v>
@@ -102,7 +102,65 @@
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541</v>
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug</v>
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\GeenIsr0.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\GeenIsr1.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\GeenIsr2.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\getSensoren_Task.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\Klok.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\LichtLinks.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\LichtRechts.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\MijnTaken.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorLinks.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\MotorRechts.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RCX_ISR.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RCX_Task_Task.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RCX_tx.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_croutine.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_event_groups.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_FreeRTOSConfig.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_heap.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_list.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_port.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_queue.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_stream_buffer.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_tasks.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\RTOS_timers.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\setmotoren_Task.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\TRX_rx.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\TRX_Task_Task.lst</v>
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_RCX.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_RCX_BOOT.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_RCX_INT.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_RCX_IntClock.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_RCX_PM.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_TRX.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_TRX_BOOT.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_TRX_INT.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_TRX_IntClock.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_TRX_PM.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\USB.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\USB_BOOT.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\USB_INT.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\USB_IntClock.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\USB_PM.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\VermogenLinks.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\VermogenLinks_PM.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\VermogenRechts.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\VermogenRechts_PM.lst</v>
+<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\Wagen.lst</v>
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.elf</v>
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.hex</v>
 <v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.map</v>
@@ -113,17 +171,6 @@
 <VisibleNodeIds>
 <v>PSoCWagen</v>
 <v>PSoCWagen\PsocWagen</v>
-<v>PSoCWagen\PsocWagen\CortexM3</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.elf</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.hex</v>
-<v>PSoCWagen\PsocWagen\CortexM3\ARM_GCC_541\Debug\PsocWagen.map</v>
-<v>PSoCWagen\PsocWagen\PsocWagen.gpdsc</v>
-<v>PSoCWagen\PsocWagen\PsocWagen.rpt</v>
-<v>PSoCWagen\PsocWagen\PsocWagen_timing.html</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -136,7 +183,7 @@
 <v>PSoCWagen</v>
 <v>PSoCWagen\PsocWagen</v>
 <v>PSoCWagen\PsocWagen\PSoC 5LP Architecture TRM</v>
-<v>PSoCWagen\PsocWagen\CY8C52LP Family Datasheet</v>
+<v>PSoCWagen\PsocWagen\CY8C58LP Family Datasheet</v>
 <v>PSoCWagen\PsocWagen\System Reference Guides</v>
 <v>PSoCWagen\PsocWagen\System Reference Guides\cy_boot_v6_10</v>
 <v>PSoCWagen\PsocWagen\cy_clock_v2_20.pdf</v>
@@ -153,7 +200,7 @@
 <v>PSoCWagen</v>
 <v>PSoCWagen\PsocWagen</v>
 <v>PSoCWagen\PsocWagen\PSoC 5LP Architecture TRM</v>
-<v>PSoCWagen\PsocWagen\CY8C52LP Family Datasheet</v>
+<v>PSoCWagen\PsocWagen\CY8C58LP Family Datasheet</v>
 <v>PSoCWagen\PsocWagen\System Reference Guides</v>
 <v>PSoCWagen\PsocWagen\System Reference Guides\cy_boot_v6_10</v>
 <v>PSoCWagen\PsocWagen\cy_clock_v2_20.pdf</v>
@@ -186,15 +233,7 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\PsocWagen.cydsn\TopDesign\TopDesign.cysch" />
-<name v=".\PsocWagen.cydsn\PsocWagen.cydwr" />
-<name v=".\PsocWagen.cydsn\main.c" />
-<name v=".\PsocWagen.cydsn\Wagen.h" />
-<name v=".\PsocWagen.cydsn\Wagen.c" />
 <name v=".\PsocWagen.cydsn\UART.c" />
-<name v=".\PsocWagen.cydsn\MijnTaken.c" />
-<name v=".\PsocWagen.cydsn\MijnTaken.h" />
-<name v=".\PsocWagen.cydsn\UART.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -202,7 +241,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1009, 495" SelectedTabbedMdiWindow="7045a2dd-7741-4792-8008-ef478f56bb9d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="8017b4b4-91fa-48a8-b9e6-7c80146f4832" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\TopDesign\TopDesign.cysch" Guid="883883ce-d023-4d68-9c81-3fbf320906f6" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\PsocWagen.cydwr" Guid="ed11fa3f-59ff-4c97-9dec-018bc6cb7fc2" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\main.c" Guid="90900fce-0179-4579-8b50-c18522df673d" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\Wagen.h" Guid="37cd39c4-fa2e-4e7b-9dd7-1c634d47d62b" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\Wagen.c" Guid="d929cc40-eee3-4479-a7bd-13adb821f48d" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\UART.c" Guid="7045a2dd-7741-4792-8008-ef478f56bb9d" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\MijnTaken.c" Guid="8f66c451-f4e2-4163-a4fe-67b30775ec7f" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\MijnTaken.h" Guid="cf355a9e-c4d6-463c-8526-2481bee2aa07" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\UART.h" Guid="68c35e26-bc8f-45f7-96a0-e52a624df90e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1220, 495" SelectedTabbedMdiWindow="8017b4b4-91fa-48a8-b9e6-7c80146f4832"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="8017b4b4-91fa-48a8-b9e6-7c80146f4832" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\UART.c" Guid="afc9d829-5431-40dd-9403-fb95a4a0fb55" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

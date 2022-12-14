@@ -10,4 +10,8 @@
  * ========================================
 */
 void opstart();
+void rcxTaakSetup(void *arg);
+void trxTaakSetup(void *arg);
+void motorTaakSetup(void *arg);
+void sensorTaakSetup(void *arg);
 /* [] END OF FILE */

@@ -30,7 +30,7 @@ int _write(int file, char *ptr, int len){
     file = file;
     for (i = 0; i < len; i++)
     {
-        UART_TRX_PutChar(*ptr++);
+        USB_PutChar(*ptr++);
     }
     return len;
 }

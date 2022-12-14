@@ -19,13 +19,14 @@
 #define TRX_BUF_SIZE 80
 
 static const int RCX_BUF_SIZE = 400;
-extern char data_wagen[4];
-extern char data_godot[3];
+extern char data_wagen[3];
+extern char data_godot[2];
 
 int sendData(const char *logNaam, const char *trx_data){
-    const int len = strlen(trx_data);
-    const int txBytes = uart_write_bytes(TRX_UART, trx_data, len);
-    ESP_LOGI(logNaam, "status: %s en %d verstuurd", trx_data, txBytes);
+    char commArr[5] = {COMM_START, trx_data[0], trx_data[1], trx_data[2], COMM_EINDE};
+     const int len = strlen(commArr);
+    const int txBytes = uart_write_bytes(TRX_UART, commArr, len);
+    ESP_LOGI(logNaam, "status: %s en %d verstuurd", commArr, txBytes);
     return txBytes;
 }
 
@@ -58,7 +59,7 @@ void tx_task_maker(void *arg){
             if (rcx_data[(uint8_t)buf_adres] == COMM_START)
             {
                 uint8_t bericht_index = buf_adres;
-                for (uint_fast8_t i = 1; i <= 4; i++)
+                for (uint_fast8_t i = 1; i <= 3; i++)
                 {
                     data_wagen[i - 1] = rcx_data[bericht_index + i];
                 }
@@ -72,10 +73,10 @@ void tx_task_maker(void *arg){
 
 void uart_start(void){
     const uart_config_t uart_config = {
-        .baud_rate = 115200,
+        .baud_rate = 4800,
         .data_bits = UART_DATA_8_BITS,
         .parity = UART_PARITY_EVEN,
-        .stop_bits = UART_STOP_BITS_1,
+        .stop_bits = UART_STOP_BITS_2,
         .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
         .source_clk = UART_SCLK_DEFAULT,
     };

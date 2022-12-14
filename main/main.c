@@ -20,8 +20,8 @@
 #endif
 
 // vars
-char data_wagen[4]={100,100,7,8};
-char data_godot[3]={100,100,5};
+char data_wagen[3]={100,100,7};
+char data_godot[2]={100,100};
 
 
 static void tx_task(void * arg){

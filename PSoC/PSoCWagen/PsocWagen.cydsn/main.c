@@ -18,10 +18,12 @@ int main(void)
     CyGlobalIntEnable;
     opstart();
     
-    for(;;)
-    {
-        /* Place your application code here. */
-    }
+    void rcxTaakSetup();
+    void trxTaakSetup();
+    void motorTaakSetup();
+    void sensorTaakSetup();
+    
+    vTaskStartScheduler();
 }
 
 /* [] END OF FILE */

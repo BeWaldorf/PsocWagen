@@ -28,8 +28,8 @@
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 static httpd_handle_t server = NULL;
-extern char data_wagen[4];
-extern char data_godot[3];
+extern char data_wagen[3];
+extern char data_godot[2];
 static EventGroupHandle_t static_wifi_groep;
 static int s_retry_num = 0;
 
@@ -62,8 +62,8 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base,
 
 esp_err_t get_handler(httpd_req_t *req)
 {
-    char antw[4];
-    for (uint_fast8_t i = 0; i < 4; i++)
+    char antw[3];
+    for (uint_fast8_t i = 0; i < 3; i++)
     {
         antw[i] = data_wagen[i];
     }
@@ -87,7 +87,7 @@ esp_err_t set_handler(httpd_req_t *req)
         return ESP_FAIL;
     }
     httpd_resp_send(req, godot_bericht, HTTPD_RESP_USE_STRLEN);
-    for (uint_fast8_t i = 0; i < 3; i++)
+    for (uint_fast8_t i = 0; i < 2; i++)
     {
         data_godot[i] = godot_bericht[i];
     }

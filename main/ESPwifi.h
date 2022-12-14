@@ -2,8 +2,8 @@
 #include "esp_http_server.h"
 #include "esp_log.h"
 
-extern char data_wagen[4];
-extern char data_godot[3];
+extern char data_wagen[3];
+extern char data_godot[2];
 
 void wifi_event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data);
 esp_err_t get_handler(httpd_req_t *req);
