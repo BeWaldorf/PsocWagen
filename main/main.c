@@ -21,7 +21,7 @@
 
 // vars
 char data_wagen[3]={100,100,7};
-char data_godot[2]={100,100};
+char data_godot[2]={99,50};
 
 
 static void tx_task(void * arg){

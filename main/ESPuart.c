@@ -23,10 +23,10 @@ extern char data_wagen[3];
 extern char data_godot[2];
 
 int sendData(const char *logNaam, const char *trx_data){
-    char commArr[5] = {COMM_START, trx_data[0], trx_data[1], trx_data[2], COMM_EINDE};
+    char commArr[5] = {COMM_START, trx_data[0], trx_data[1], COMM_EINDE};
      const int len = strlen(commArr);
     const int txBytes = uart_write_bytes(TRX_UART, commArr, len);
-    ESP_LOGI(logNaam, "status: %s en %d verstuurd", commArr, txBytes);
+    ESP_LOGI(logNaam, "status: %d,%d,%d,%d,%d verstuurd", commArr[0], commArr[1], commArr[2], commArr[3], commArr[4]);
     return txBytes;
 }
 
@@ -40,34 +40,32 @@ void tx_task_maker(void *arg){
     }
 }
 
-    void rx_task_maker(void *arg){
+void rx_task_maker(void *arg){
     static const char *RX_TASK_TAG = "RX_TASK";
     esp_log_level_set(RX_TASK_TAG, ESP_LOG_INFO);
     char *rcx_data = (char *)malloc(RCX_BUF_SIZE + 1);
     char buf_adres = 0;
+    uint8_t watchdog_teller = 0;
     while (1)
     {
         const int rxBytes = uart_read_bytes(RCX_UART, rcx_data, RCX_BUF_SIZE, 1000 / portTICK_PERIOD_MS);
-        if (rxBytes > 0)
-        {
-            rcx_data[rxBytes] = 0;
-            ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, rcx_data);
+        if (rxBytes > 0){
+            rcx_data[rxBytes] = COMM_EINDE;
+            ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%d','%d','%d','%d','%d'.", rxBytes, rcx_data[0], rcx_data[1], rcx_data[2], rcx_data[3], rcx_data[4]);
             ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, rcx_data, rxBytes, ESP_LOG_INFO);
         }
-        do
-        {
-            if (rcx_data[(uint8_t)buf_adres] == COMM_START)
-            {
+        do{
+            if(watchdog_teller >= 10) rcx_data[(uint8_t)buf_adres] = COMM_EINDE;
+            if (rcx_data[(uint8_t)buf_adres] == COMM_START){
                 uint8_t bericht_index = buf_adres;
-                for (uint_fast8_t i = 1; i <= 3; i++)
-                {
+                for (uint_fast8_t i = 1; i <= 3; i++){
                     data_wagen[i - 1] = rcx_data[bericht_index + i];
                 }
-                buf_adres = COMM_EINDE;
+                rcx_data[(uint8_t)buf_adres] = COMM_EINDE;
             }
-        } while (buf_adres != COMM_EINDE);
+            watchdog_teller++;
+        } while (rcx_data[(uint8_t)buf_adres] != COMM_EINDE);
     }
-
     free(rcx_data);
 }
 

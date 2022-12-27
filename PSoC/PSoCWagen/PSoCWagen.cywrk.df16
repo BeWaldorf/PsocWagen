@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="PSoCWagen\PsocWagen\TopDesign">
 <ExpandedNodeIds>
 <v>PSoCWagen</v>
 <v>PSoCWagen\PsocWagen</v>
@@ -219,16 +219,6 @@
 <v>PSoCWagen\PsocWagen\PSoC 5LP Architecture TRM</v>
 <v>PSoCWagen\PsocWagen\CY8C58LP Family Datasheet</v>
 <v>PSoCWagen\PsocWagen\System Reference Guides</v>
-<v>PSoCWagen\PsocWagen\System Reference Guides\cy_boot_v6_10</v>
-<v>PSoCWagen\PsocWagen\cy_clock_v2_20.pdf</v>
-<v>PSoCWagen\PsocWagen\cy_isr_v1_71.pdf</v>
-<v>PSoCWagen\PsocWagen\cy_pins_v2_20</v>
-<v>PSoCWagen\PsocWagen\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>PSoCWagen\PsocWagen\LUT_v1_60.pdf</v>
-<v>PSoCWagen\PsocWagen\PWM_v3_30</v>
-<v>PSoCWagen\PsocWagen\PWM_v3_30\PWM_v3_30.pdf</v>
-<v>PSoCWagen\PsocWagen\UART_v2_50</v>
-<v>PSoCWagen\PsocWagen\UART_v2_50\UART_v2_50.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>PSoCWagen</v>
@@ -236,16 +226,6 @@
 <v>PSoCWagen\PsocWagen\PSoC 5LP Architecture TRM</v>
 <v>PSoCWagen\PsocWagen\CY8C58LP Family Datasheet</v>
 <v>PSoCWagen\PsocWagen\System Reference Guides</v>
-<v>PSoCWagen\PsocWagen\System Reference Guides\cy_boot_v6_10</v>
-<v>PSoCWagen\PsocWagen\cy_clock_v2_20.pdf</v>
-<v>PSoCWagen\PsocWagen\cy_isr_v1_71.pdf</v>
-<v>PSoCWagen\PsocWagen\cy_pins_v2_20</v>
-<v>PSoCWagen\PsocWagen\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>PSoCWagen\PsocWagen\LUT_v1_60.pdf</v>
-<v>PSoCWagen\PsocWagen\PWM_v3_30</v>
-<v>PSoCWagen\PsocWagen\PWM_v3_30\PWM_v3_30.pdf</v>
-<v>PSoCWagen\PsocWagen\UART_v2_50</v>
-<v>PSoCWagen\PsocWagen\UART_v2_50\UART_v2_50.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -268,6 +248,9 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\PsocWagen.cydsn\UART.c" />
+<name v=".\PsocWagen.cydsn\PsocWagen.cydwr" />
+<name v=".\PsocWagen.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\PsocWagen.cydsn\MijnTaken.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -275,7 +258,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1220, 495" SelectedTabbedMdiWindow="8017b4b4-91fa-48a8-b9e6-7c80146f4832"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="8017b4b4-91fa-48a8-b9e6-7c80146f4832" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\UART.c" Guid="afc9d829-5431-40dd-9403-fb95a4a0fb55" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1009, 495" SelectedTabbedMdiWindow="afc9d829-5431-40dd-9403-fb95a4a0fb55"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="8017b4b4-91fa-48a8-b9e6-7c80146f4832" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\UART.c" Guid="afc9d829-5431-40dd-9403-fb95a4a0fb55" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\PsocWagen.cydwr" Guid="652175b1-5b44-42da-8bf6-3cd526d70195" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\TopDesign\TopDesign.cysch" Guid="49f68e33-6bcb-4be4-9890-b9bac9b2713f" /><DocumentWindow Key="G:\project\PsocWagen\PSoC\PSoCWagen\PsocWagen.cydsn\MijnTaken.c" Guid="ca4657a8-8102-452c-88a8-48c3997517c0" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

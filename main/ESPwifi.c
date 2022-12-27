@@ -18,11 +18,12 @@
 #include "lwip/err.h"
 #include "lwip/sys.h"
 
-#define SSID "SuperNitro"
-#define WIFI_PASS "SuperWagen5"
+#define SCHEIDING       ","
+#define SSID            "SuperNitro"
+#define WIFI_PASS       "SuperWagen5"
 #define WIFI_SUCCES_BIT BIT0
-#define WIFI_BUIS_BIT BIT1
-#define ESP "piloot"
+#define WIFI_BUIS_BIT   BIT1
+#define ESP             "piloot"
 #define MAX_WIFI_POGING 25
 #define ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD WIFI_AUTH_WPA_PSK
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
@@ -60,21 +61,22 @@ static void wifi_event_handler(void *arg, esp_event_base_t event_base,
     }
 }
 
-esp_err_t get_handler(httpd_req_t *req)
+esp_err_t esp_handler(httpd_req_t *req)
 {
-    char antw[3];
-    for (uint_fast8_t i = 0; i < 3; i++)
-    {
-        antw[i] = data_wagen[i];
+    char antw[6];
+    for (uint_fast8_t i = 0; i < 3; i++){
+        antw[i*2] = data_wagen[i];
+        antw[(i*2)+1] = SCHEIDING;
     }
     httpd_resp_send(req, antw, HTTPD_RESP_USE_STRLEN);
     httpd_resp_set_type(req, (char)200);
+    ESP_LOGI(ESP, "GET waarde: %d, %d en %d", data_wagen[0], data_wagen[1],data_wagen[2]);
     // return "ge weet toch da ge mij kunt betrouwen zeker"
     return ESP_OK;
 }
-esp_err_t set_handler(httpd_req_t *req)
+esp_err_t godot_handler(httpd_req_t *req)
 {
-    char godot_bericht[13];
+    char godot_bericht[64];
     size_t recv_size = MIN(req->content_len, sizeof(godot_bericht));
     int controle = httpd_req_recv(req, godot_bericht, recv_size);
 
@@ -86,13 +88,23 @@ esp_err_t set_handler(httpd_req_t *req)
         }
         return ESP_FAIL;
     }
-    httpd_resp_send(req, godot_bericht, HTTPD_RESP_USE_STRLEN);
-    for (uint_fast8_t i = 0; i < 2; i++)
-    {
-        data_godot[i] = godot_bericht[i];
+    char *token = strtok(godot_bericht, SCHEIDING);
+    if (token){
+        data_godot[0] = atoi(token);
+        token = strtok(NULL, SCHEIDING);
+        if (token){
+            data_godot[1] = atoi(token);
+        }
+        else{
+            ESP_LOGE(ESP, "error bij POST. Buffer: %s",godot_bericht);
+        }
     }
+    else{
+        ESP_LOGE(ESP, "error bij POST. Buffer: %s", godot_bericht);
+    }
+    httpd_resp_send(req, godot_bericht, HTTPD_RESP_USE_STRLEN);
     godot_bericht[13] = '\0';
-    ESP_LOGI(ESP, "waarde: %s", godot_bericht);
+    ESP_LOGI(ESP, "POST waarde: %d en %d", data_godot[0], data_godot[1]);
     return ESP_OK;
 }
 
@@ -153,12 +165,12 @@ void server_start(void)
         httpd_uri_t wagen_get = {
             .uri = "/esp",
             .method = HTTP_GET,
-            .handler = get_handler,
+            .handler = esp_handler,
             .user_ctx = NULL};
         httpd_uri_t wagen_set = {
             .uri = "/pse",
             .method = HTTP_POST,
-            .handler = set_handler,
+            .handler = godot_handler,
             .user_ctx = NULL};
         httpd_register_uri_handler(server, &wagen_get);
         httpd_register_uri_handler(server, &wagen_set);
